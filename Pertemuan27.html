@@ -1,0 +1,308 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 27</title>
+    <style>
+        * {box-sizing: border-box}
+        @font-face {
+            font-family: oswald;
+            src: url(fonts/Oswald-SemiBold.ttf);
+        }
+        @font-face {
+            font-family: karma;
+            src: url(fonts/Karma-Regular.ttf);
+        }
+        body,h1 {
+            margin: 0;
+        }
+        body {
+            background-color: #ffcc00;
+        }
+        h1 {
+            font-family: oswald,sans-serif;
+            font-size: 12vh;
+        }
+        p, ol, th , td, pre {
+            font-family: karma, sans-serif;
+            font-size: 4vh;
+        }
+        section {
+            
+        }
+        section + section {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+          
+        }
+        section + section > a{
+            width: 50%;
+        }
+        section > div{
+            display: none;
+        }
+        section > div , section  a{
+            height: 100vh;
+        }
+        div > div {
+            padding: 40px 100px 10px 100px;
+        }
+        th, td{
+          padding: 0 30px;  
+          text-align: center;
+        }
+        table, th, tr {
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+        td {
+            border:none
+        }
+        td + td {
+            border-left: 1px solid #000;
+        }
+        .flexAround{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <div >
+            <div>
+                <h1>Operator</h1>
+                <p>Operators adalah operasi hitung dengan perlakuan sebuah bilangan pada matematika.  Di javascript terdapat  6 jenis Operator yaitu </p>
+                <ol>
+                    <li>Aritmetic Operators</li>
+                    <li>Operators</li>
+                    <li>Comparison Operators</li>
+                    <li>Operators </li> 
+                    <li>Conditional Operators</li>
+                    <li>Type Operators</li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Aritmetic Operators</h1>
+                <p>Arimetic Operator adalah operasi aritmatika dasar</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            +
+                        </td>
+                        <td>
+                            Tambah / Addition
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            Kurang / Subtraction
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            *
+                        </td>
+                        <td>
+                            Kali / Multiplication
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            **
+                        </td>
+                        <td>
+                            Pangkat / Exponentiation
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            /
+                        </td>
+                        <td>
+                            Bagi / Division
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            %
+                        </td>
+                        <td>
+                            Sisa Bagi / Modulus
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ++
+                        </td>
+                        <td>
+                            Peningkatan / Increment
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            --
+                        </td>
+                        <td>
+                            Penurunan / Decrement
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Assignment Operators</h1>
+                <p>Assigment Operator adalah operator yang memberikan nilai pada sebuah variable pada javascript.</p>
+                <p>Di bawah ini adalah table contoh dimana nilai sebuah variable adalah 1</p>
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Penerapan</th>
+                        <th>Hasil</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            =
+                        </td>
+                        <td>
+                            variable = 1
+                        </td>
+                        <td>
+                            1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            +=
+                        </td>
+                        <td>
+                            variable += 2
+                        </td>
+                        <td>
+                            3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            *=
+                        </td>
+                        <td>
+                            variable *= 2
+                        </td>
+                        <td>
+                            2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            **=
+                        </td>
+                        <td>
+                            **= 2
+                        </td>
+                        <td>
+                            1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            /=
+                        </td>
+                        <td>
+                            Variable /= 2
+                        </td>
+                        <td>
+                            0.5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            %=
+                        </td>
+                        <td>
+                            variable %= 2
+                        </td>
+                        <td>
+                            1
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>
+                    Concatenate
+                </h1>
+                <p>Concatenate adalah sebuah istilah dalam javascript yang memberikan perlakuan menggambungkan pada operator terhadap variable string</p>
+                <p>Contoh Seperti berikut ini</p>
+                <code class="flexAround">
+                <pre>
+                let text1 = "John";
+                let text2 = "Doe";
+                let text3 = text1 + " " + text2;
+                </pre>
+                <pre>
+                let text1 = "What a very ";
+                text1 += "nice day";
+                </pre>
+                <pre>
+                let x = 5 + 5;
+                let y = "5" + 5;
+                let z = "Hello" + 5;
+                </pre>
+                </code>
+                
+
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <a onclick="plusSlides(-1)">
+
+        </a>
+        <a onclick="plusSlides(1)">
+
+        </a>
+    </section>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function showSlides(n) {
+            let i;
+            let slide = document.querySelectorAll("section > div");
+            if (n > slide.length) {
+                slideIndex = 1
+            }
+            if (n < 1){
+                slideIndex = slide.length
+            }
+            for (i = 0; i < slide.length; i++){
+                slide[i].style.display = "none";
+            }
+            slide[slideIndex-1].style.display ="block";
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            console.log(slideIndex);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Pertemuan 27</title>
+    <style>
+        * {box-sizing: border-box}
+        @font-face {
+            font-family: oswald;
+            src: url(fonts/Oswald-SemiBold.ttf);
+        }
+        @font-face {
+            font-family: karma;
+            src: url(fonts/Karma-Regular.ttf);
+        }
+        body,h1,pre {
+            margin: 0;
+        }
+        body {
+            background-color: #ffcc00;
+        }
+        h1 {
+            font-family: oswald,sans-serif;
+            font-size: 12vh;
+        }
+        pre {
+            font-family: karma, sans-serif;
+            font-size: 5vh;
+        }
+        p, ol, th , td {
+            font-family: karma, sans-serif;
+            font-size: 4vh;
+        }
+
+        section + section {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+          
+        }
+        section + section > a{
+            width: 50%;
+        }
+        section > div {
+            display: none;
+        }
+        section > div , section  a{
+            height: 100vh;
+        }
+        div > div {
+            padding: 40px 100px 10px 100px;
+        }
+        th, td{
+          padding: 0 30px;  
+          text-align: center;
+        }
+        table, th, tr {
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+        td {
+            border:none
+        }
+        td + td {
+            border-left: 1px solid #000;
+        }     
+    </style>
+
+</head>
+<body>
+    <section>
+        <div >
+            <div>
+                <h1>
+                    Berapa nilai Variable x ?
+                </h1>
+
+                <pre>
+let x = 4;
+x **= 2;
+                </pre>
+
+                <!-- 16 -->
+            </div>
+        </div>
+        <div >
+            <div>
+                <h1>
+                    Berapa nilai Variable x ?
+                </h1>
+                <pre>
+let x = 20;
+x %= 3
+                    <!-- 2 -->
+                </pre>
+            </div>
+        </div>
+        <div >
+            <div>
+                <h1>
+                    Berapa nilai Variable x ?
+                </h1>
+                <pre>
+let x = "10";
+x += 3
+                    <!-- '103' -->
+                </pre>
+            </div>
+        </div>
+        <div >
+            <div>
+                <h1>
+                    Berapa nilai Variable x ?
+                </h1>
+                <pre>
+const y = 10;
+y **= 2;
+                    <!-- Error -->
+                </pre>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>
+                    Berapa nilai Variable x ?
+                </h1>
+                <pre>
+let x = 100;
+x = 2;
+                    <!-- 2 -->
+                </pre>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>
+                    Berapa nilai Variable x ?
+                </h1>
+                <pre>
+let x = 30 + 20;
+x %= 2;
+                    <!-- 0 -->
+                </pre>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>
+                    Berapa nilai Variable d ?
+                </h1>
+                <pre>
+let y = "y";
+let z = "fa";
+let d = "sa";
+let t = "la";
+d += y + "a";
+t += z;
+d += " "+t +"r";
+                    <!-- saya lafar-->
+                </pre>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>
+                    Berapa nilai Variable t ?
+                </h1>
+                <pre>
+let y = "ta";
+let z = "k"
+let t = "p" + "a";
+let s = "faaan"
+y *= 1;
+t += z + " " + y + "da";
+t += " " + "tam" + s;
+                    <!-- pak NaNda tamfaaan-->
+                </pre>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>
+                    Berapa nilai Variable d ?
+                </h1>
+                <pre>
+                    
+                </pre>
+            </div>
+        </div>
+     
+    </section>
+    <section>
+        <a onclick="plusSlides(-1)">
+
+        </a>
+        <a onclick="plusSlides(1)">
+
+        </a>
+    </section>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function showSlides(n) {
+            let i;
+            let slide = document.querySelectorAll("section > div");
+            if (n > slide.length) {
+                slideIndex = 1
+            }
+            if (n < 1){
+                slideIndex = slide.length
+            }
+            for (i = 0; i < slide.length; i++){
+                slide[i].style.display = "none";
+            }
+            slide[slideIndex-1].style.display ="block";
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            console.log(slideIndex);
+        }
+
+    </script>
+</body>
+</html>

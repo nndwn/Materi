@@ -76,200 +76,45 @@
     <section>
         <div >
             <div>
-                <h1>Operator</h1>
-                <p>Operators adalah operasi hitung dengan perlakuan sebuah bilangan pada matematika.  Di javascript terdapat  6 jenis Operator yaitu </p>
-                <ol>
-                    <li>Aritmetic Operators</li>
-                    <li>Operators</li>
-                    <li>Comparison Operators</li>
-                    <li>Operators </li> 
-                    <li>Conditional Operators</li>
-                    <li>Type Operators</li>
-                </ol>
+                <h1>Function</h1>
+                <p>adalah bagian dari sebuah bahasa program yang digunakan untuk membloking code yang memiliki sebuah fungsi khusus1</p>
             </div>
         </div>
         <div>
             <div>
-                <h1>Aritmetic Operators</h1>
-                <p>Arimetic Operator adalah operasi aritmatika dasar</p>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Deskripsi</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            +
-                        </td>
-                        <td>
-                            Tambah / Addition
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            Kurang / Subtraction
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            *
-                        </td>
-                        <td>
-                            Kali / Multiplication
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            **
-                        </td>
-                        <td>
-                            Pangkat / Exponentiation
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            /
-                        </td>
-                        <td>
-                            Bagi / Division
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            %
-                        </td>
-                        <td>
-                            Sisa Bagi / Modulus
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            ++
-                        </td>
-                        <td>
-                            Peningkatan / Increment
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            --
-                        </td>
-                        <td>
-                            Penurunan / Decrement
-                        </td>
-                    </tr>
-                </table>
+                <h1>Cara Penulisan Function</h1>
+                <p>Pada javascript function didefinisikan dengan function nama function diikutin dengan tanda kurung ()</p>
+               <p>Berikut ini adalah contoh dari sebuah function</p>
+               <pre>
+                function luasSegitiga (a, t) {
+                    return (a*t)/2;
+                }
+               </pre>
+               <p>pada contoh di atas adalah function untuk menentukan nilai sebuah luas segitiga</p>
             </div>
         </div>
         <div>
             <div>
-                <h1>Assignment Operators</h1>
-                <p>Assigment Operator adalah operator yang memberikan nilai pada sebuah variable pada javascript.</p>
-                <p>Di bawah ini adalah table contoh dimana nilai sebuah variable adalah 1</p>
-                <table>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Penerapan</th>
-                        <th>Hasil</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            =
-                        </td>
-                        <td>
-                            variable = 1
-                        </td>
-                        <td>
-                            1
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            +=
-                        </td>
-                        <td>
-                            variable += 2
-                        </td>
-                        <td>
-                            3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            *=
-                        </td>
-                        <td>
-                            variable *= 2
-                        </td>
-                        <td>
-                            2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            **=
-                        </td>
-                        <td>
-                            **= 2
-                        </td>
-                        <td>
-                            1
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            /=
-                        </td>
-                        <td>
-                            Variable /= 2
-                        </td>
-                        <td>
-                            0.5
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            %=
-                        </td>
-                        <td>
-                            variable %= 2
-                        </td>
-                        <td>
-                            1
-                        </td>
-                    </tr>
-                </table>
+                <h1>DOM (Document Objek Model)</h1>
+                <p>>Dengan menggunakan console yang terdapat pada sebuah browser kita dapat menjalan function tersebut, tapi 
+                bagaimana jika menggunakan input number pada html ? </p> 
+                <p>Dengan menggunakan teknik DOM (Document Objek Model) </p>
+                <p> berikut ini adalah contoh penerapannya</p>
             </div>
         </div>
         <div>
             <div>
-                <h1>
-                    Concatenate
-                </h1>
-                <p>Concatenate adalah sebuah istilah dalam javascript yang memberikan perlakuan menggambungkan pada operator terhadap variable string</p>
-                <p>Contoh Seperti berikut ini</p>
-                <code class="flexAround">
-                <pre>
-                let text1 = "John";
-                let text2 = "Doe";
-                let text3 = text1 + " " + text2;
-                </pre>
-                <pre>
-                let text1 = "What a very ";
-                text1 += "nice day";
-                </pre>
-                <pre>
-                let x = 5 + 5;
-                let y = "5" + 5;
-                let z = "Hello" + 5;
-                </pre>
-                </code>
+                <h1>Buat Document Html Sederhana Berupa Input</h1>
+              <xmp>
+                    <p>Input Nilai Alas dan Tinggi Pada sebuah Segitiga</p>
+                    <input type="number" placeholder="Alas" id="alas"> <br/>
+                    <input type="number" placeholder="Tinggi" id="tinggi"> 
+                </xmp>
+                <p> Hasil akan seperti di bawah ini dimana kita tidak dapat mengiput text hanya dapat menggunakan number</p>
                 
-
-
+                <p>Input Nilias Alas dan Tinggi pada sebuah segitiga</p>
+                <input type="number" placeholder="Alas" id="alas"> <br/>
+                <input type="number" placeholder="Tinggi" id="tinggi">
             </div>
         </div>
     </section>

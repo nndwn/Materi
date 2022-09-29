@@ -26,10 +26,7 @@
         }
         p, ol, th , td, pre {
             font-family: karma, sans-serif;
-            font-size: 4vh;
-        }
-        section {
-            
+            font-size: 5vh;
         }
         section + section {
             display: flex;
@@ -48,7 +45,7 @@
         section > div , section  a{
             height: 100vh;
         }
-        div > div {
+        div > .main {
             padding: 40px 100px 10px 100px;
         }
         th, td{
@@ -75,46 +72,51 @@
 <body>
     <section>
         <div >
-            <div>
+            <div class="main">
                 <h1>Function</h1>
                 <p>adalah bagian dari sebuah bahasa program yang digunakan untuk membloking code yang memiliki sebuah fungsi khusus1</p>
             </div>
         </div>
         <div>
-            <div>
+            <div class="main">
                 <h1>Cara Penulisan Function</h1>
-                <p>Pada javascript function didefinisikan dengan function nama function diikutin dengan tanda kurung ()</p>
-               <p>Berikut ini adalah contoh dari sebuah function</p>
+                <p>Berikut ini adalah contoh dari sebuah function</p>
+               <div class="flexAround">
+               <pre>
+                function () {
+                    console.log("Hello Word")
+                }
+               </pre>
                <pre>
                 function luasSegitiga (a, t) {
                     return (a*t)/2;
                 }
                </pre>
-               <p>pada contoh di atas adalah function untuk menentukan nilai sebuah luas segitiga</p>
+               </div>
+               
             </div>
         </div>
         <div>
-            <div>
-                <h1>DOM (Document Objek Model)</h1>
-                <p>>Dengan menggunakan console yang terdapat pada sebuah browser kita dapat menjalan function tersebut, tapi 
-                bagaimana jika menggunakan input number pada html ? </p> 
-                <p>Dengan menggunakan teknik DOM (Document Objek Model) </p>
-                <p> berikut ini adalah contoh penerapannya</p>
+            <div class="main">
+                <h1>Latihan</h1>
+                <p>Latihan ini harus sudah memahami</p>
+                <ol>
+                    <li>
+                        Variable Const dan Let
+                    </li>
+                    <li>
+                        Memahami Tipe  Data
+                    </li>
+                    <li>Memahami Operator Assigment dan Aritmatika dasar</li>
+                    <li>
+                        Cara Membuat Function
+                    </li>
+                </ol>
             </div>
         </div>
         <div>
-            <div>
-                <h1>Buat Document Html Sederhana Berupa Input</h1>
-              <xmp>
-                    <p>Input Nilai Alas dan Tinggi Pada sebuah Segitiga</p>
-                    <input type="number" placeholder="Alas" id="alas"> <br/>
-                    <input type="number" placeholder="Tinggi" id="tinggi"> 
-                </xmp>
-                <p> Hasil akan seperti di bawah ini dimana kita tidak dapat mengiput text hanya dapat menggunakan number</p>
-                
-                <p>Input Nilias Alas dan Tinggi pada sebuah segitiga</p>
-                <input type="number" placeholder="Alas" id="alas"> <br/>
-                <input type="number" placeholder="Tinggi" id="tinggi">
+            <div class="main">
+                <p></p>
             </div>
         </div>
     </section>

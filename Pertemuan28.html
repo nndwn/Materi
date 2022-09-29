@@ -4,70 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pertemuan 27</title>
+    <link rel="stylesheet" href="css/style.css">\
     <style>
-        * {box-sizing: border-box}
-        @font-face {
-            font-family: oswald;
-            src: url(fonts/Oswald-SemiBold.ttf);
-        }
-        @font-face {
-            font-family: karma;
-            src: url(fonts/Karma-Regular.ttf);
-        }
-        body,h1 {
-            margin: 0;
-        }
-        body {
-            background-color: #ffcc00;
-        }
-        h1 {
-            font-family: oswald,sans-serif;
-            font-size: 12vh;
-        }
-        p, ol, th , td, pre {
-            font-family: karma, sans-serif;
-            font-size: 5vh;
-        }
-        section + section {
-            display: flex;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-          
-        }
-        section + section > a{
-            width: 50%;
-        }
-        section > div{
-            display: none;
-        }
-        section > div , section  a{
-            height: 100vh;
-        }
-        div > .main {
-            padding: 40px 100px 10px 100px;
-        }
-        th, td{
-          padding: 0 30px;  
-          text-align: center;
-        }
-        table, th, tr {
-            border-collapse: collapse;
-            border: 1px solid #000;
-        }
-        td {
-            border:none
-        }
-        td + td {
-            border-left: 1px solid #000;
-        }
-        .flexAround{
-            display: flex;
-            justify-content: space-around;
-        }
+
     </style>
-    
 </head>
 <body>
     <section>
@@ -98,7 +38,7 @@
         </div>
         <div>
             <div class="main">
-                <h1>Latihan</h1>
+                <h1>Latihan Membuat Program</h1>
                 <p>Latihan ini harus sudah memahami</p>
                 <ol>
                     <li>
@@ -116,7 +56,67 @@
         </div>
         <div>
             <div class="main">
-                <p></p>
+                <p>1. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada persegi</p>
+                <div class="flexAround">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.38 118.88"><title>persegi</title><rect x="1" y="1" width="95.75" height="95.75" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><text transform="translate(103.25 45.63)" style="font-size:18px;font-family:Myriad Pro">s</text><text transform="translate(42.75 114.38)" style="font-size:18px;font-family:Myriad Pro">s</text></svg>
+                    <div>
+                        <h1>Rumus</h1>
+                        <h2>L = s * s</h2>
+                        <h2>Kel = 4 * s</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <p>2. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada persegi Panjang</p>
+                <div class="flexAround">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.41 125.4"><title>persegiPanjang</title><rect x="1" y="28.65" width="213.33" height="95.75" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><text transform="translate(97.67 15.07)" style="font-size:18px;font-family:Myriad Pro">p</text><text transform="translate(227.17 81.23)" style="font-size:18px;font-family:Myriad Pro">l</text></svg>
+                    <div>
+                        <h1>Rumus</h1>
+                        <h2>L = p * l</h2>
+                        <h2>Kel = 2 * (p + l) </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <p>3. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada layang- layang</p>
+                <div class="flexAround">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.82 187.46"><title>layang-layang</title><polygon points="67.41 185.41 1.24 67.58 67.41 1.41 133.57 67.58 67.41 185.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="67.41" y1="1.41" x2="67.41" y2="3.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="67.41" y1="7.41" x2="67.41" y2="181.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;stroke-dasharray:4.000000953674316,4.000000953674316"/><line x1="67.41" y1="183.41" x2="67.41" y2="185.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="1.24" y1="67.58" x2="133.57" y2="67.58" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;stroke-dasharray:4"/><text transform="translate(29.49 60.44)" style="font-size:18px;font-family:Myriad Pro">d1</text><text transform="translate(78.24 115.44)" style="font-size:18px;font-family:Myriad Pro">d2</text><text transform="translate(106.57 30.44)" style="font-size:18px;font-family:Myriad Pro">a</text><text transform="translate(13.91 142.11)" style="font-size:18px;font-family:Myriad Pro">b</text></svg>
+                    <div>
+                        <h1>Rumus</h1>
+                        <h2>L = 1/2 * (a+b) * t </h2>
+                        <h2>Kel = 2 * (a + b) </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <p>4. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada trapesium</p>
+                <div class="flexAround">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.21 139.57"><defs><style>.a,.b{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;}.b{stroke-dasharray:3.99 3.99;}.c{font-size:18px;font-family:Myriad Pro;}</style></defs><title>trapesium</title><polygon class="a" points="214.76 117.62 1.43 117.62 36.09 21.87 178.26 21.87 214.76 117.62"/><line class="a" x1="36.09" y1="21.87" x2="36.09" y2="23.87"/><line class="b" x1="36.09" y1="27.86" x2="36.09" y2="113.63"/><line class="a" x1="36.09" y1="115.62" x2="36.09" y2="117.62"/><text class="c" transform="translate(47.93 81.32)">t</text><text class="c" transform="translate(110.18 135.07)">a</text><text class="c" transform="translate(110.18 15.07)">b</text></svg>
+                    <div>
+                        <h1>Rumus</h1>
+                        <h2>L = 1/2 * d1 * d2</h2>
+                        <h2>Kel = a + b + c + d  </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <p>5. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada lingkaran</p>
+                <div class="flexAround">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"><title>lingkaran</title><circle cx="65" cy="65" r="64" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="1.02" y1="65" x2="65" y2="65" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;stroke-dasharray:4"/><text transform="translate(28.67 80.58)" style="font-size:18px;font-family:Myriad Pro">r</text></svg>
+                    <div>
+                        <h1>Rumus</h1>
+                        <h2>L = math.PI  * r * r/h2>
+                        <h2>Kel = 2 * math.PI * r </h2>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

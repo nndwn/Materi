@@ -14,3 +14,5 @@ Celsius to Kelvin: K = C + 273 (or K = C + 271.15 to be more precise)
 Fahrenheit to Celsius: C = (F - 32)/1.80
 
 Fahrenheit to Kelvin: K = 5/9(F - 32) + 273.15
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_comparison

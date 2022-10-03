@@ -12,6 +12,7 @@ body,h1, h2{
 }
 body {
     background-color: #ffcc00;
+    font-family: karma, sans-serif;
 }
 h1, h2{
     font-family: oswald,sans-serif;
@@ -20,8 +21,16 @@ h1, h2{
 h2 {
     font-size: 8vh;
 }
-p, ol, th , td, pre {
-    font-family: karma, sans-serif;
+pre {
+    font-size: 3vh;
+}
+.flex {
+    display: flex;
+}
+.wd-50 {
+    width: 50%;
+}
+p, ol, th , td  {
     font-size: 5vh;
 }
 section + section {

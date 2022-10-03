@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 27</title>
+    <title>Pertemuan 29</title>
     <link rel="stylesheet" href="css/style2.css">
     <style>
 
@@ -14,7 +14,7 @@
         <div >
             <div class="main">
                 <h1>HTML DOM (Document Objeck Model)</h1>
-                <p>Saat Halaman Web Dimuat atau tampil , browser membuat <b>D</b>ocument <b>O</b>bject <b>M</b>odel. Berikut ini adalah Flowchart pada HTML DOM</p>
+                <p>Sebelumnya kita sudah memahami membuat program sederhana dengan menggunakan javascript function yang dijalankan melalui console pada browser namun bagaimana membuat input dan output untuk menampilkan hasil nilai dari function dengan menggunakan HTML agar tampak lebih interaktif ? , HTML DOM adalah teknik manipulasi HTML dimana disaat Halaman Web Dimuat atau tampil , browser membuat <b>D</b>ocument <b>O</b>bject <b>M</b>odel. DOM itu adalah struktur HTML berupa document yang dapat dibaca oleh browser. berikut adalah contoh gambaran DOM</p>
             </div>
         </div>
         <div>
@@ -24,92 +24,199 @@
                     <figcaption>
                         The HTML DOM Tree of Objects
                     </figcaption>
-                </figure>
-             
-               
+                </figure>               
             </div>
         </div>
         <div>
             <div class="main">
-                <h1>Latihan Membuat Program</h1>
-                <p>Latihan ini harus sudah memahami</p>
+                <h1>DOM HTML YANG DAPAT DILAKUKAN</h1>
                 <ol>
                     <li>
-                        Variable Const dan Let
+                        Dapat Mengganti atau mengubah Element HTML pada Halaman Web. 
                     </li>
                     <li>
-                        Memahami Tipe  Data
+                        Dapat Mengganti atau mengubah Attribut HTML pada Halaman Web.
                     </li>
-                    <li>Memahami Operator Assigment dan Aritmatika dasar</li>
                     <li>
-                        Cara Membuat Function
+                        Dapat Mengganti atau mengubah Style CSS pada Halaman Web.
+                    </li>
+                    <li>
+                        Dapat Menghapus Element dan Attribut HTML yang sudah ada.
+                    </li>
+                    <li>
+                        Dapat Mengnambahkan Element dan Attribut HTML.
+                    </li>
+                    <li>
+                        Dapat memberikan reaksi event pada HTML
+                    </li>
+                    <li>
+                        Dapat menambahkan reaksi event pada HTML
                     </li>
                 </ol>
             </div>
         </div>
         <div>
             <div class="main">
-                <p>1. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada persegi</p>
-                <div class="flexAround">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.38 118.88"><title>persegi</title><rect x="1" y="1" width="95.75" height="95.75" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><text transform="translate(103.25 45.63)" style="font-size:18px;font-family:Myriad Pro">s</text><text transform="translate(42.75 114.38)" style="font-size:18px;font-family:Myriad Pro">s</text></svg>
-                    <div>
-                        <h1>Rumus</h1>
-                        <h2>L = s * s</h2>
-                        <h2>Kel = 4 * s</h2>
+                <h1>DOM Methods</h1>
+                <p>Pada Latihan Sebelumnya , function javascript di input dengan nilai paramater seperti berikut ini.</p>
+                <pre>
+function luasSegitiga (a , t){
+    return a*t/2;
+}
+                </pre>
+                <p>dengan memasukan nilai alas dengan variable a dan tinggi dengan variable t pada function tersebut akan menampikan nilai jumlah luas segitiga di console, dengan menggunakan DOM Methods dapat menampilkan hasil nilai ke dalam html.</p>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>DOM Document</h1>
+                <div class="flex">
+                <p class="wd-50">Ada bagian dari methods DOM yang diawali penulisan document.namaMethods, DOM Document dapat melakukan Hal yang dapat dilakukan Document HTML seperti menambahkan dan Mengganti element dan atrribut HTML dan sebagainya, berikut ini adalah contoh dari DOM HTML</p>
+                <pre class="wd-50">
+&lt;html>
+    &lt;head>
+        &lt;title>Sample&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;div id="test">
+        &lt;/div>
+        &lt;script>
+            function hello(){
+                document.getElementById("test").innerHTML = "&lt;b>Hello World&lt;/b>";
+            }
+            hello()
+        &lt;/script>
+    &lt;/body>
+&lt;/html>
+                </pre>
+            </div>
+                <p>Maka pada atribut id pada element div akan menampilkan tulisan Hello World dalam bentuk bold</P>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <p>pada contoh sebelumnya terdapat DOM document dan DOM element yaitu document.getElementById dan element.innerHTML, yang mana fungsinya document.ElementById sebagai mencari attribut ID dan innerHTML menampilkannya.</p>
+                <p>dengan menggunakan document DOM kita dapat menjadikan sebagai input dan element DOM sebagai Output untuk contoh program bangun datar berikut ini.</p>
+                <pre>
+function luasSegitiga (a , t){
+    return a*t/2;
+    }
+                </pre>
+
+            </div>
+        </div>
+        <div>
+            <div class="main">
+               <h1>Bagaimana dari contoh program bangun datar sebelumnya dapat membuat input dan output dalam bentuk HTML ?</h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>1.Membuat HTML</h1>
+                <div class="flex">
+                    <div class="wd-50">
+                        <p>Buat HTML berikut ini</p>
+                        <p>Buat Struktur HTML dengan 2 input yang hanya dapat memasukan berupa number saja yaitu alas dan tinggi serta juga memberikan attribut id setiap element tag HTML nya.</p>
                     </div>
+                    <pre class="wd-50">
+&lt;html>
+    &lt;head>
+        &lt;title>Program Bangun Data&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;script>&lt;/script>
+        &lt;div>
+            &lt;input id="alas" type="number" 
+            placeholder="Alas"/> 
+            &lt;br/>
+            &lt;input id="tinggi" type="number" 
+            placeholder="Tinggi"/>
+            &lt;br/>
+            &lt;button onclick="">&lt;/button>
+        &lt;/div>
+        &lt;div id="luas">&lt/div>
+    &lt;/body>
+&lt;/html>
+                    </pre>
                 </div>
             </div>
         </div>
         <div>
             <div class="main">
-                <p>2. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada persegi Panjang</p>
-                <div class="flexAround">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.41 125.4"><title>persegiPanjang</title><rect x="1" y="28.65" width="213.33" height="95.75" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><text transform="translate(97.67 15.07)" style="font-size:18px;font-family:Myriad Pro">p</text><text transform="translate(227.17 81.23)" style="font-size:18px;font-family:Myriad Pro">l</text></svg>
-                    <div>
-                        <h1>Rumus</h1>
-                        <h2>L = p * l</h2>
-                        <h2>Kel = 2 * (p + l) </h2>
-                    </div>
-                </div>
+                <h1>2. Membuat javascript</h1>
+                <p>Buat penulisan javascript secara internal lalu buat Function Baru mengenai mengenai program dasar bidang datar ganti parameter tapi dengan membuat variable, seperti berikut ini</p>
+                <pre>
+&lt;script>
+    function luasSegitiga(){
+        let alas;
+        let tinggi;
+        let luas = alas * tinggi / 2;
+    }
+&lt;/script>
+                </pre>
             </div>
         </div>
         <div>
             <div class="main">
-                <p>3. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada layang- layang</p>
-                <div class="flexAround">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.82 187.46"><title>layang-layang</title><polygon points="67.41 185.41 1.24 67.58 67.41 1.41 133.57 67.58 67.41 185.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="67.41" y1="1.41" x2="67.41" y2="3.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="67.41" y1="7.41" x2="67.41" y2="181.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;stroke-dasharray:4.000000953674316,4.000000953674316"/><line x1="67.41" y1="183.41" x2="67.41" y2="185.41" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="1.24" y1="67.58" x2="133.57" y2="67.58" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;stroke-dasharray:4"/><text transform="translate(29.49 60.44)" style="font-size:18px;font-family:Myriad Pro">d1</text><text transform="translate(78.24 115.44)" style="font-size:18px;font-family:Myriad Pro">d2</text><text transform="translate(106.57 30.44)" style="font-size:18px;font-family:Myriad Pro">a</text><text transform="translate(13.91 142.11)" style="font-size:18px;font-family:Myriad Pro">b</text></svg>
-                    <div>
-                        <h1>Rumus</h1>
-                        <h2>L = 1/2 * (a+b) * t </h2>
-                        <h2>Kel = 2 * (a + b) </h2>
-                    </div>
-                </div>
+                <h1>3. Menambahkan DOM HTML</h1>
+                <p>Tambahkan DOM Document untuk mencari id pada element tag input dan DOM element untuk menampilkan hasil nilai yang telah di jumlahkan</p>
+                <pre>
+&lt;script>
+    function luasSegitiga(){
+        let alas = document.getElementById("Alas").value;
+        let tinggi = document.getElementById("Tinggi").value;
+        let luas = alas * tinggi / 2;
+        document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
+        }
+&lt;/script>
+                </pre>
             </div>
         </div>
         <div>
             <div class="main">
-                <p>4. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada trapesium</p>
-                <div class="flexAround">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.21 139.57"><defs><style>.a,.b{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;}.b{stroke-dasharray:3.99 3.99;}.c{font-size:18px;font-family:Myriad Pro;}</style></defs><title>trapesium</title><polygon class="a" points="214.76 117.62 1.43 117.62 36.09 21.87 178.26 21.87 214.76 117.62"/><line class="a" x1="36.09" y1="21.87" x2="36.09" y2="23.87"/><line class="b" x1="36.09" y1="27.86" x2="36.09" y2="113.63"/><line class="a" x1="36.09" y1="115.62" x2="36.09" y2="117.62"/><text class="c" transform="translate(47.93 81.32)">t</text><text class="c" transform="translate(110.18 135.07)">a</text><text class="c" transform="translate(110.18 15.07)">b</text></svg>
-                    <div>
-                        <h1>Rumus</h1>
-                        <h2>L = 1/2 * d1 * d2</h2>
-                        <h2>Kel = a + b + c + d  </h2>
-                    </div>
-                </div>
+                <p>Berikut adalah script lengkapnya</p>
+                <pre>
+&lt;html>
+    &lt;head>
+       &lt;title>Program Bangun Data&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;script>
+        function luasSegitiga(){
+            let alas = document.getElementById("Alas").value;
+            let tinggi = document.getElementById("Tinggi").value;
+            let luas = alas * tinggi / 2;
+            document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
+            }
+        &lt;/script>
+        &lt;div>
+            &lt;input id="alas" type="number" 
+            placeholder="Alas"/> 
+            &lt;br/>
+            &lt;input id="tinggi" type="number" 
+            placeholder="Tinggi"/>
+            &lt;br/>
+            &lt;button onclick="">&lt;/button>
+        &lt;/div>
+        &lt;div id="luas">&lt/div>
+    &lt;/body>
+&lt;/html>
+                </pre>
             </div>
         </div>
         <div>
             <div class="main">
-                <p>5. tuliskan sebuah function untuk membuat program yang menentukan nilai luas dan keliling bangun datar pada lingkaran</p>
-                <div class="flexAround">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"><title>lingkaran</title><circle cx="65" cy="65" r="64" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px"/><line x1="1.02" y1="65" x2="65" y2="65" style="fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:2px;stroke-dasharray:4"/><text transform="translate(28.67 80.58)" style="font-size:18px;font-family:Myriad Pro">r</text></svg>
-                    <div>
-                        <h1>Rumus</h1>
-                        <h2>L = math.PI  * r * r/h2>
-                        <h2>Kel = 2 * math.PI * r </h2>
-                    </div>
-                </div>
+                <p>Hasil akan seperti contoh berikut ini</p>
+                <script>
+                    function luasSegitiga(){
+                        let alas = document.getElementById("Alas").value;
+                        let tinggi = document.getElementById("Tinggi").value;
+                        let luas = alas * tinggi /2;
+                        document.getElementById("luas").innerHTML = luas + " cm<sup>2</sup>"
+                    }
+                </script>
+                
+
             </div>
         </div>
     </section>

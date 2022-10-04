@@ -7,7 +7,7 @@
     font-family: karma;
     src: url(fonts/Karma-Regular.ttf);
 }
-body,h1, h2{
+body,h1, h2, p, pre{
     margin: 0;
 }
 body {
@@ -22,7 +22,7 @@ h2 {
     font-size: 8vh;
 }
 pre {
-    font-size: 3vh;
+    font-size: 1.4em;
 }
 .flex {
     display: flex;
@@ -52,6 +52,10 @@ section > div , section  a{
 }
 div > .main {
     padding: 15px 100px 10px 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 th, td{
   padding: 0 30px;  
@@ -77,4 +81,13 @@ svg {
 }
 figure img{
     width: 100%;
+    border-radius: 1em;
+}
+.vh-6{
+    font-weight: bold;
+    font-size: 6vh;
+}
+
+.multiply{
+    mix-blend-mode: multiply;
 }

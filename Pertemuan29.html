@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pertemuan 29</title>
     <link rel="stylesheet" href="css/style2.css">
-    <style>
-
-    </style>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <section>
         <div >
             <div class="main">
-                <h1>HTML DOM (Document Objeck Model)</h1>
-                <p>Sebelumnya kita sudah memahami membuat program sederhana dengan menggunakan javascript function yang dijalankan melalui console pada browser namun bagaimana membuat input dan output untuk menampilkan hasil nilai dari function dengan menggunakan HTML agar tampak lebih interaktif ? , HTML DOM adalah teknik manipulasi HTML dimana disaat Halaman Web Dimuat atau tampil , browser membuat <b>D</b>ocument <b>O</b>bject <b>M</b>odel. DOM itu adalah struktur HTML berupa document yang dapat dibaca oleh browser. berikut adalah contoh gambaran DOM</p>
+                <h1>HTML DOM (Document Object Model)</h1>
+                <p>HTML DOM adalah teknik manipulasi HTML dimana disaat Halaman Web Dimuat atau tampil , browser membuat <b>D</b>ocument <b>O</b>bject <b>M</b>odel. DOM itu adalah struktur HTML berupa document yang dapat dibaca oleh browser. berikut adalah contoh gambaran DOM</p>
             </div>
         </div>
         <div>
             <div class="main">
                 <figure>
-                    <img src="img/pic_htmltree.gif" alt="The HTML DOM Tree of Object"/>
+                    <img class="multiply" src="img/pic_htmltree.gif" alt="The HTML DOM Tree of Object"/>
                     <figcaption>
                         The HTML DOM Tree of Objects
                     </figcaption>
@@ -29,7 +27,7 @@
         </div>
         <div>
             <div class="main">
-                <h1>DOM HTML YANG DAPAT DILAKUKAN</h1>
+                <h1>DOM HTML YANG DAPAT MELAKUKAN</h1>
                 <ol>
                     <li>
                         Dapat Mengganti atau mengubah Element HTML pada Halaman Web. 
@@ -55,59 +53,58 @@
                 </ol>
             </div>
         </div>
+            <div>
+                <div class="main">
+                    <h1>Method dan Property</h1>
+                    <div class="flex">
+                    <p class="wd-50">Method adalah suatu metode yang menyeleksi objek DOM berupa element tag HTML ,atrribut class dan ID, CSS seleksi. Property dalam javascript dapat menggantikan, mengubah, menambahkan dan menghapus suatu DOM pada sebuah halaman. Berikut ini adalah salah satu Contoh Method dan Property  </p>
+                    <pre class="wd-50">
+    &lt;html>
+        &lt;head>
+            &lt;title>Sample&lt;/title>
+        &lt;/head>
+        &lt;body>
+            &lt;div id="test">
+            &lt;/div>
+            &lt;script>
+                function hello(){
+                    document.getElementById("test").innerHTML 
+                     = "&lt;b>Hello World&lt;/b>";
+                }
+                hello()
+            &lt;/script>
+        &lt;/body>
+    &lt;/html>
+                    </pre>
+    
+            </div>
+</div>
+</div>
+    
         <div>
             <div class="main">
-                <h1>DOM Methods</h1>
-                <p>Pada Latihan Sebelumnya , function javascript di input dengan nilai paramater seperti berikut ini.</p>
-                <pre>
+
+            <p>Pada Hasil Kode tersebut menambahkan element HTML pada attribut ID bernama test dengan tulisan <b>Hello World</b> pada browser</P>
+
+                <p>pada contoh sebelumnya terdapat method yaitu document.getElementById yang berfungsi untuk mencari element yang memiliki attribut ID dan property element.innerHTML untuk menambahkan element HTML.
+                <p>dari kesimpulan tersebut yang mana method dapat memberikan nilai seperti input sementara property dapat menampilkan nilai seperti output.</p>
+                
+                
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <p>Pada latihan sebelumnya kita telah membuat program sederhana menggunakan function untuk menghitung sebuah bidang datar, pada program tersebut dapat dikembangkan dengan menerapkan method dan property agar program dapat lebih interaktif</p>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <pre class="vh-6">
 function luasSegitiga (a , t){
     return a*t/2;
 }
                 </pre>
-                <p>dengan memasukan nilai alas dengan variable a dan tinggi dengan variable t pada function tersebut akan menampikan nilai jumlah luas segitiga di console, dengan menggunakan DOM Methods dapat menampilkan hasil nilai ke dalam html.</p>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <h1>DOM Document</h1>
-                <div class="flex">
-                <p class="wd-50">Ada bagian dari methods DOM yang diawali penulisan document.namaMethods, DOM Document dapat melakukan Hal yang dapat dilakukan Document HTML seperti menambahkan dan Mengganti element dan atrribut HTML dan sebagainya, berikut ini adalah contoh dari DOM HTML</p>
-                <pre class="wd-50">
-&lt;html>
-    &lt;head>
-        &lt;title>Sample&lt;/title>
-    &lt;/head>
-    &lt;body>
-        &lt;div id="test">
-        &lt;/div>
-        &lt;script>
-            function hello(){
-                document.getElementById("test").innerHTML = "&lt;b>Hello World&lt;/b>";
-            }
-            hello()
-        &lt;/script>
-    &lt;/body>
-&lt;/html>
-                </pre>
-            </div>
-                <p>Maka pada atribut id pada element div akan menampilkan tulisan Hello World dalam bentuk bold</P>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <p>pada contoh sebelumnya terdapat DOM document dan DOM element yaitu document.getElementById dan element.innerHTML, yang mana fungsinya document.ElementById sebagai mencari attribut ID dan innerHTML menampilkannya.</p>
-                <p>dengan menggunakan document DOM kita dapat menjadikan sebagai input dan element DOM sebagai Output untuk contoh program bangun datar berikut ini.</p>
-                <pre>
-function luasSegitiga (a , t){
-    return a*t/2;
-    }
-                </pre>
-
-            </div>
-        </div>
-        <div>
-            <div class="main">
-               <h1>Bagaimana dari contoh program bangun datar sebelumnya dapat membuat input dan output dalam bentuk HTML ?</h1>
+                <p>Pada contoh function di atas dapat disimpulkan memiliki dua input berupa alas dan tinggi , lalu nilai dikembalikan dan dijumlahkan agar dapat menampilkan output sebuah nilai dan berikut ini adalah cara bagaimana menerap method dan property pada function tersebut.</p>
             </div>
         </div>
         <div>
@@ -115,8 +112,8 @@ function luasSegitiga (a , t){
                 <h1>1.Membuat HTML</h1>
                 <div class="flex">
                     <div class="wd-50">
-                        <p>Buat HTML berikut ini</p>
-                        <p>Buat Struktur HTML dengan 2 input yang hanya dapat memasukan berupa number saja yaitu alas dan tinggi serta juga memberikan attribut id setiap element tag HTML nya.</p>
+                        <p>Buat Struktur HTML</p>
+                        <p>Seperti dijelaskan sebelumnya, function memiliki dua nilai alas dan tinggi maka dengan itu buat 2 input berserta attribut type number dan element html untuk menampilkan hasil nilai, berikut kode nya </p>
                     </div>
                     <pre class="wd-50">
 &lt;html>
@@ -127,12 +124,12 @@ function luasSegitiga (a , t){
         &lt;script>&lt;/script>
         &lt;div>
             &lt;input id="alas" type="number" 
-            placeholder="Alas"/> 
+            placeholder="alas"/> 
             &lt;br/>
             &lt;input id="tinggi" type="number" 
-            placeholder="Tinggi"/>
+            placeholder="tinggi"/>
             &lt;br/>
-            &lt;button onclick="">&lt;/button>
+            &lt;button onclick="">Hitung&lt;/button>
         &lt;/div>
         &lt;div id="luas">&lt/div>
     &lt;/body>
@@ -144,7 +141,8 @@ function luasSegitiga (a , t){
         <div>
             <div class="main">
                 <h1>2. Membuat javascript</h1>
-                <p>Buat penulisan javascript secara internal lalu buat Function Baru mengenai mengenai program dasar bidang datar ganti parameter tapi dengan membuat variable, seperti berikut ini</p>
+                <p>Banyak cara untuk membuat sebuah function pada berikut ini.  </p>
+                <div class="flex">
                 <pre>
 &lt;script>
     function luasSegitiga(){
@@ -154,21 +152,43 @@ function luasSegitiga (a , t){
     }
 &lt;/script>
                 </pre>
+                <p> Atau </p>
+                <pre>
+&lt;script>              
+let a;
+let t;    
+luasSegitiga(a, t)
+ function luasSegitiga (a , t){
+    return a*t/2;
+    }
+&lt;/script>                        
+                </pre>
+            </div>
+            <p>Mana yang lebih efektif ?</p>
             </div>
         </div>
         <div>
             <div class="main">
                 <h1>3. Menambahkan DOM HTML</h1>
-                <p>Tambahkan DOM Document untuk mencari id pada element tag input dan DOM element untuk menampilkan hasil nilai yang telah di jumlahkan</p>
+                <p>Tambahkan method untuk mencari attribut ID pada element tag input dan berikan property untuk menampilkan hasil nilai yang telah di jumlahkan</p>
                 <pre>
 &lt;script>
     function luasSegitiga(){
-        let alas = document.getElementById("Alas").value;
-        let tinggi = document.getElementById("Tinggi").value;
+        let alas = document.getElementById("alas").value;
+        let tinggi = document.getElementById("tinggi").value;
         let luas = alas * tinggi / 2;
         document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
         }
 &lt;/script>
+                </pre>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>4. Reaksi Pada Button</h1>
+                <p>tambahkan javascript secara inline pada sebuah button agar function dapat berjalan</p>
+                <pre>
+&lt;button onclick="luasSegitiga()"> Hitung &lt; button>
                 </pre>
             </div>
         </div>
@@ -183,8 +203,8 @@ function luasSegitiga (a , t){
     &lt;body>
         &lt;script>
         function luasSegitiga(){
-            let alas = document.getElementById("Alas").value;
-            let tinggi = document.getElementById("Tinggi").value;
+            let alas = document.getElementById("alas").value;
+            let tinggi = document.getElementById("tinggi").value;
             let luas = alas * tinggi / 2;
             document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
             }
@@ -196,7 +216,7 @@ function luasSegitiga (a , t){
             &lt;input id="tinggi" type="number" 
             placeholder="Tinggi"/>
             &lt;br/>
-            &lt;button onclick="">&lt;/button>
+            &lt;button onclick="luasSegitiga()">Hitung&lt;/button>
         &lt;/div>
         &lt;div id="luas">&lt/div>
     &lt;/body>
@@ -209,46 +229,47 @@ function luasSegitiga (a , t){
                 <p>Hasil akan seperti contoh berikut ini</p>
                 <script>
                     function luasSegitiga(){
-                        let alas = document.getElementById("Alas").value;
-                        let tinggi = document.getElementById("Tinggi").value;
+                        let alas = document.getElementById("alas").value;
+                        let tinggi = document.getElementById("tinggi").value;
                         let luas = alas * tinggi /2;
                         document.getElementById("luas").innerHTML = luas + " cm<sup>2</sup>"
                     }
                 </script>
-                
+                <div>
+                     <input type="number" id="alas">
+                     <input type="number" id="tinggi">
+                </div>
+                <button onclick="luasSegitiga()">Hitung</button>
+                <div>
+                    <div id="luas"></div>
+                </div>
 
             </div>
         </div>
+        <div>
+            <div class="main">
+                <h1>Latihan</h1>
+                <p>Buat sebuah program Conversi suhu menggunakan fucntion , method, dan property</p>
+                <p>berikut adalah rumus Celcius ke Fahrenheit dan kelvin</p>
+                <p class="vh-6">
+                    Celsius to Fahrenheit: F = 9/5(C) + 32 or F = 1.80(C) + 32
+                </p>
+                <p class="vh-6">
+                    Celsius to Kelvin: K = C + 273 or K = C + 271.15
+                </p>
+            </div>
+        </div>
     </section>
-    <section>
+    <!-- <section>
         <a onclick="plusSlides(-1)">
 
         </a>
         <a onclick="plusSlides(1)">
 
         </a>
-    </section>
+    </section> -->
     <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        function showSlides(n) {
-            let i;
-            let slide = document.querySelectorAll("section > div");
-            if (n > slide.length) {
-                slideIndex = 1
-            }
-            if (n < 1){
-                slideIndex = slide.length
-            }
-            for (i = 0; i < slide.length; i++){
-                slide[i].style.display = "none";
-            }
-            slide[slideIndex-1].style.display ="block";
-        }
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-            console.log(slideIndex);
-        }
+
 
     </script>
 </body>

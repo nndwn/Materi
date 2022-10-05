@@ -16,7 +16,7 @@ let slideIndex = 1;
 showSlides(slideIndex);
 function showSlides(n) {
     let i;
-    let slide = document.querySelectorAll("section > div");
+    let slide = document.querySelectorAll("#slide");
     if (n > slide.length) {
         slideIndex = 1
     }
@@ -27,8 +27,34 @@ function showSlides(n) {
         slide[i].style.display = "none";
     }
     slide[slideIndex-1].style.display ="block";
-}
+};
 function plusSlides(n) {
     showSlides(slideIndex += n);
-    console.log(slideIndex);
+};
+
+
+
+function buttonS(){
+    let start = document.getElementById("n").value;
+    let startbutton = document.getElementsByTagName("button")[0];
+    const att = document.createAttribute("disabled");
+
+    if (start > 0 ){
+        startbutton.removeAttribute("disabled");
+    } else {
+        startbutton.setAttributeNode(att);
+    }
 }
+
+
+function times () {
+    let i;
+    let start = document.getElementById("n").value;
+    let waktu = document.getElementById("countT");
+    waktu.style.display ="block";
+    if (start > 0){
+        for (i = 0; i < start; i++){
+                waktu.innerHTML +=( "<span>"+ i +"</span>");
+            }
+    } 
+};

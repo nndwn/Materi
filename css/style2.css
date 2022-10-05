@@ -16,10 +16,10 @@ body {
 }
 h1, h2{
     font-family: oswald,sans-serif;
-    font-size: 12vh;
+    font-size: 3em;
 }
 h2 {
-    font-size: 8vh;
+    font-size: 1.2em;
 }
 pre {
     font-size: 1.4em;
@@ -31,7 +31,7 @@ pre {
     width: 50%;
 }
 p, ol, th , td  {
-    font-size: 5vh;
+    font-size: 1.7em;
 }
 section + section {
     display: flex;
@@ -44,12 +44,10 @@ section + section {
 section + section > a{
     width: 50%;
 }
-section > div{
-    display: none;
-}
-section > div , section  a{
+section > div.slide{
     height: 100vh;
 }
+
 div > .main {
     padding: 15px 100px 10px 100px;
     height: 100vh;
@@ -86,6 +84,9 @@ figure img{
 .vh-6{
     font-weight: bold;
     font-size: 6vh;
+}
+.dnone {
+    display: none;
 }
 
 .multiply{

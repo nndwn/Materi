@@ -3,17 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 29</title>
+    <title>Pertemuan 30</title>
     <link rel="stylesheet" href="css/style2.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <section>
-        <div >
+        <div id="countT"></div>
+        <div id="slide" class="dnone">
             <div class="main">
                 <h1>Operator Comparison </h1>
                 <p>Salah satu dari operator javascript untuk membuat suatu perbandingan nilai biasa digunakan untuk sebuah kondisi.</p>
-            </div>
+           
             <table>
                 <thead>
                     <tr>
@@ -57,7 +58,8 @@
                 </tbody>
             </table>
         </div>
-        <div>
+        </div>
+        <div  id="slide" class="dnone">
             <div class="main">
                 <h1>Operator Logical</h1>
                 <p>adalah operator yang menilai perbandingan sebuah kebenaran dalam keputusan</p>
@@ -85,277 +87,252 @@
                 </table>             
             </div>
         </div>
-        <div>
+        <div  id="slide" class="dnone">
             <div class="main">
-                <h1>Table Logical</h1>
-                <div class="flexAround">
-                    <div>
-                    <p>Logical AND</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Kondisi A</th>
-                                    <th>Kondisi B</th>
-                                    <th>Hasil</th>
-                                    <th>Contoh</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>true</td>
-                                    <td>false</td>
-                                    <td>false</td>
+                <h1>Logical AND</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kondisi A</th>
+                            <th>Kondisi B</th>
+                            <th>Hasil</th>
+                            <th>Contoh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>true</td>
+                            <td>false</td>
+                            <td>false</td>
 
-                                </tr>
-                                <tr>
-                                    <td>false</td>
-                                    <td>true</td>
-                                    <td>false</td>
-                                </tr>
-                                <tr>
-                                    <td>false</td>
-                                    <td>false</td>
-                                    <td>false</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </div>
-                <div>
-                    <p>Logical Or</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Kondisi A</th>
-                                <th>Kondisi B</th>
-                                <th>Hasil</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>true</td>
-                                <td>true</td>
-                                <td>true</td>
-                            </tr>
-                            <tr>
-                                <td>true</td>
-                                <td>false</td>
-                                <td>true</td>
-                            </tr>
-                            <tr>
-                                <td>false</td>
-                                <td>true</td>
-                                <td>true</td>
-                            </tr>
-                            <tr>
-                                <td>false</td>
-                                <td>false</td>
-                                <td>false</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <p>Logical Not</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Kondisi</th>
-                                <th>Hasil</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>true</td>
-                                <td>false</td>
-                            </tr>
-                            <tr>
-                                <td>false</td>
-                                <td>true</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
+                        </tr>
+                        <tr>
+                            <td>false</td>
+                            <td>true</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>false</td>
+                            <td>false</td>
+                            <td>false</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div>
+              
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Logical Or</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kondisi A</th>
+                            <th>Kondisi B</th>
+                            <th>Hasil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>true</td>
+                            <td>true</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>true</td>
+                            <td>false</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>false</td>
+                            <td>true</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>false</td>
+                            <td>false</td>
+                            <td>false</td>
+                        </tr>
+                    </tbody>
+                </table>   
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Logical Not</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kondisi</th>
+                            <th>Hasil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>true</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>false</td>
+                            <td>true</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
             <div class="main">
                 <div>
                 <h1>Latihan</h1>
-                <button>Mulai</button>
+                <input type="number" id="n" onkeyup="buttonS()">
+                <button disabled onclick="times()">Mulai</button>
                 </div>
             </div>
         </div>
     
-        <div>
+        <div class="dnone">
             <div class="main">
-                <h1>1. ( 2 == "2")</h1>
+                <p>1. ( 2 == "2")</p>
             </div>
         </div>
-        <div>
+        <div class="dnone">
             <div class="main">
-                <h1>2. ("test" == "test")</h1>
+                <p>2. ("test" == "test")</p>
             </div>
         </div>
-        <div>
+        <div class="dnone">
             <div class="main">
-                <h1>3. ()</h1>
+                <p>3. (100 >= 100)</p>
             </div>
         </div>
-        <div>
+        <div class="dnone">
             <div class="main">
-                <h1>1.Membuat HTML</h1>
-                <div class="flex">
-                    <div class="wd-50">
-                        <p>Buat Struktur HTML</p>
-                        <p>Seperti dijelaskan sebelumnya, function memiliki dua nilai alas dan tinggi maka dengan itu buat 2 input berserta attribut type number dan element html untuk menampilkan hasil nilai, berikut kode nya </p>
-                    </div>
-                    <pre class="wd-50">
-&lt;html>
-    &lt;head>
-        &lt;title>Program Bangun Data&lt;/title>
-    &lt;/head>
-    &lt;body>
-        &lt;script>&lt;/script>
-        &lt;div>
-            &lt;input id="alas" type="number" 
-            placeholder="alas"/> 
-            &lt;br/>
-            &lt;input id="tinggi" type="number" 
-            placeholder="tinggi"/>
-            &lt;br/>
-            &lt;button onclick="">Hitung&lt;/button>
-        &lt;/div>
-        &lt;div id="luas">&lt/div>
-    &lt;/body>
-&lt;/html>
+                <p>4. (300 >= "100")</p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>5. (10 &lt; 10)</p> 
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>6. !(30 > 1)</p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>7. (120 === "120") </p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>8. (102 === 211) </p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>9. (null == 0) </p>
+            </div>
+        </div>
+        <div class="dnone">>
+            <div class="main">
+                <p>10. !(20 >= 20) </p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>11. (2011 > 2011) || (2009 > 2001)</p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>12. !(28 &lt; 30 && 20 >= 20)</p>
+            </div>
+        </div>
+        <div class="dnone"> 
+            <div class="main">
+                <p>13. (!(30 == 31) || 50 > 30)</p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>14. (20 &lt;= 40 && 50 == "50") || (34 >= 1)</p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>15. <pre>
+let varTest = 20; 
+varTest += 10;
+(varTest >= 2 && (varTest-1) &lt; 29)
+                </pre>
+            </p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+            <p>16 . 
+            <pre>
+let x = 90;
+!(!(x > 10) || x == (x*1))
+            </pre>
+        </p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>17. 
+                    <pre>
+let y = 20;
+let x = (y % 2 >= 1 );
+(x || y &lt; x + 30)
                     </pre>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <h1>2. Membuat javascript</h1>
-                <p>Banyak cara untuk membuat sebuah function pada berikut ini.  </p>
-                <div class="flex">
-                <pre>
-&lt;script>
-    function luasSegitiga(){
-        let alas;
-        let tinggi;
-        let luas = alas * tinggi / 2;
-    }
-&lt;/script>
-                </pre>
-                <p> Atau </p>
-                <pre>
-&lt;script>              
-let a;
-let t;    
-luasSegitiga(a, t)
- function luasSegitiga (a , t){
-    return a*t/2;
-    }
-&lt;/script>                        
-                </pre>
-            </div>
-            <p>Mana yang lebih efektif ?</p>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <h1>3. Menambahkan DOM HTML</h1>
-                <p>Tambahkan method untuk mencari attribut ID pada element tag input dan berikan property untuk menampilkan hasil nilai yang telah di jumlahkan</p>
-                <pre>
-&lt;script>
-    function luasSegitiga(){
-        let alas = document.getElementById("alas").value;
-        let tinggi = document.getElementById("tinggi").value;
-        let luas = alas * tinggi / 2;
-        document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
-        }
-&lt;/script>
-                </pre>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <h1>4. Reaksi Pada Button</h1>
-                <p>tambahkan javascript secara inline pada sebuah button agar function dapat berjalan</p>
-                <pre>
-&lt;button onclick="luasSegitiga()"> Hitung &lt; button>
-                </pre>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <p>Berikut adalah script lengkapnya</p>
-                <pre>
-&lt;html>
-    &lt;head>
-       &lt;title>Program Bangun Data&lt;/title>
-    &lt;/head>
-    &lt;body>
-        &lt;script>
-        function luasSegitiga(){
-            let alas = document.getElementById("alas").value;
-            let tinggi = document.getElementById("tinggi").value;
-            let luas = alas * tinggi / 2;
-            document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
-            }
-        &lt;/script>
-        &lt;div>
-            &lt;input id="alas" type="number" 
-            placeholder="Alas"/> 
-            &lt;br/>
-            &lt;input id="tinggi" type="number" 
-            placeholder="Tinggi"/>
-            &lt;br/>
-            &lt;button onclick="luasSegitiga()">Hitung&lt;/button>
-        &lt;/div>
-        &lt;div id="luas">&lt/div>
-    &lt;/body>
-&lt;/html>
-                </pre>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <p>Hasil akan seperti contoh berikut ini</p>
-                <script>
-                    function luasSegitiga(){
-                        let alas = document.getElementById("alas").value;
-                        let tinggi = document.getElementById("tinggi").value;
-                        let luas = alas * tinggi /2;
-                        document.getElementById("luas").innerHTML = luas + " cm<sup>2</sup>"
-                    }
-                </script>
-                <div>
-                     <input type="number" id="alas">
-                     <input type="number" id="tinggi">
-                </div>
-                <button onclick="luasSegitiga()">Hitung</button>
-                <div>
-                    <div id="luas"></div>
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <h1>Latihan</h1>
-                <p>Buat sebuah program Conversi suhu menggunakan fucntion , method, dan property</p>
-                <p>berikut adalah rumus Celcius ke Fahrenheit dan kelvin</p>
-                <p class="vh-6">
-                    Celsius to Fahrenheit: F = 9/5(C) + 32 or F = 1.80(C) + 32
                 </p>
-                <p class="vh-6">
-                    Celsius to Kelvin: K = C + 273 or K = C + 271.15
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>18. 
+                    <pre>
+let z = 9 + d;
+let d;
+let y = 30*(10 % z)
+d += 1;
+( y == (d*10));
+                    </pre>
+                </p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p>19.
+                    <pre>
+let x = (10 == "10");
+let d = !(x && 11 > 11);
+(!(d) || x)
+                    </pre>
+                    
+                </p>
+            </div>
+        </div>
+        <div class="dnone">
+            <div class="main">
+                <p> 20.
+                    <pre>
+let x = 13;
+let y = 12;
+let z = ( x >= 13 ) || !( x > y);
+(z && (25 == (x+y)));
+
+                    </pre>
+
                 </p>
             </div>
         </div>
@@ -368,9 +345,6 @@ luasSegitiga(a, t)
 
         </a>
     </section> -->
-    <script>
 
-
-    </script>
 </body>
 </html>

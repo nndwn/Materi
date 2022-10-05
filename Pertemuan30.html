@@ -204,159 +204,77 @@
         </div>
         <div>
             <div class="main">
-                <h1>3. ()</h1>
+                <h1>3. (100 >= 100)</h1>
             </div>
         </div>
         <div>
             <div class="main">
-                <h1>1.Membuat HTML</h1>
-                <div class="flex">
-                    <div class="wd-50">
-                        <p>Buat Struktur HTML</p>
-                        <p>Seperti dijelaskan sebelumnya, function memiliki dua nilai alas dan tinggi maka dengan itu buat 2 input berserta attribut type number dan element html untuk menampilkan hasil nilai, berikut kode nya </p>
-                    </div>
-                    <pre class="wd-50">
-&lt;html>
-    &lt;head>
-        &lt;title>Program Bangun Data&lt;/title>
-    &lt;/head>
-    &lt;body>
-        &lt;script>&lt;/script>
-        &lt;div>
-            &lt;input id="alas" type="number" 
-            placeholder="alas"/> 
-            &lt;br/>
-            &lt;input id="tinggi" type="number" 
-            placeholder="tinggi"/>
-            &lt;br/>
-            &lt;button onclick="">Hitung&lt;/button>
-        &lt;/div>
-        &lt;div id="luas">&lt/div>
-    &lt;/body>
-&lt;/html>
-                    </pre>
-                </div>
+                <h1>4. (300 >= "100")</h1>
             </div>
         </div>
         <div>
             <div class="main">
-                <h1>2. Membuat javascript</h1>
-                <p>Banyak cara untuk membuat sebuah function pada berikut ini.  </p>
-                <div class="flex">
-                <pre>
-&lt;script>
-    function luasSegitiga(){
-        let alas;
-        let tinggi;
-        let luas = alas * tinggi / 2;
-    }
-&lt;/script>
+                <h1>5. (10 &lt; 10)</h1> 
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>6. !(30 > 1)</h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>7. (120 === "120") </h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>8. (102 === 211) </h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>9. (null == 0) </h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>10. !(20 >= 20) </h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>11. (2011 > 2011) || (2009 > 2001)</h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>12. !(28 &lt; 30 && 20 >= 20)</h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>13. (!(30 == 31) || 50 > 30)</h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>14. (20 &lt;= 40 && 50 == "50") || (34 >= 1)</h1>
+            </div>
+        </div>
+        <div>
+            <div class="main">
+                <h1>15. <pre>
+let varTest = 20; 
+varTest += 10;
+(varTest >= 2 && (varTest-1) &lt; 29)
                 </pre>
-                <p> Atau </p>
-                <pre>
-&lt;script>              
-let a;
-let t;    
-luasSegitiga(a, t)
- function luasSegitiga (a , t){
-    return a*t/2;
-    }
-&lt;/script>                        
-                </pre>
-            </div>
-            <p>Mana yang lebih efektif ?</p>
+                </h1>
             </div>
         </div>
         <div>
             <div class="main">
-                <h1>3. Menambahkan DOM HTML</h1>
-                <p>Tambahkan method untuk mencari attribut ID pada element tag input dan berikan property untuk menampilkan hasil nilai yang telah di jumlahkan</p>
-                <pre>
-&lt;script>
-    function luasSegitiga(){
-        let alas = document.getElementById("alas").value;
-        let tinggi = document.getElementById("tinggi").value;
-        let luas = alas * tinggi / 2;
-        document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
-        }
-&lt;/script>
-                </pre>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <h1>4. Reaksi Pada Button</h1>
-                <p>tambahkan javascript secara inline pada sebuah button agar function dapat berjalan</p>
-                <pre>
-&lt;button onclick="luasSegitiga()"> Hitung &lt; button>
-                </pre>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <p>Berikut adalah script lengkapnya</p>
-                <pre>
-&lt;html>
-    &lt;head>
-       &lt;title>Program Bangun Data&lt;/title>
-    &lt;/head>
-    &lt;body>
-        &lt;script>
-        function luasSegitiga(){
-            let alas = document.getElementById("alas").value;
-            let tinggi = document.getElementById("tinggi").value;
-            let luas = alas * tinggi / 2;
-            document.getElementById("luas").innerHTML = luas + " cm&lt;sup>2&lt;sup/>"
-            }
-        &lt;/script>
-        &lt;div>
-            &lt;input id="alas" type="number" 
-            placeholder="Alas"/> 
-            &lt;br/>
-            &lt;input id="tinggi" type="number" 
-            placeholder="Tinggi"/>
-            &lt;br/>
-            &lt;button onclick="luasSegitiga()">Hitung&lt;/button>
-        &lt;/div>
-        &lt;div id="luas">&lt/div>
-    &lt;/body>
-&lt;/html>
-                </pre>
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <p>Hasil akan seperti contoh berikut ini</p>
-                <script>
-                    function luasSegitiga(){
-                        let alas = document.getElementById("alas").value;
-                        let tinggi = document.getElementById("tinggi").value;
-                        let luas = alas * tinggi /2;
-                        document.getElementById("luas").innerHTML = luas + " cm<sup>2</sup>"
-                    }
-                </script>
-                <div>
-                     <input type="number" id="alas">
-                     <input type="number" id="tinggi">
-                </div>
-                <button onclick="luasSegitiga()">Hitung</button>
-                <div>
-                    <div id="luas"></div>
-                </div>
 
-            </div>
-        </div>
-        <div>
-            <div class="main">
-                <h1>Latihan</h1>
-                <p>Buat sebuah program Conversi suhu menggunakan fucntion , method, dan property</p>
-                <p>berikut adalah rumus Celcius ke Fahrenheit dan kelvin</p>
-                <p class="vh-6">
-                    Celsius to Fahrenheit: F = 9/5(C) + 32 or F = 1.80(C) + 32
-                </p>
-                <p class="vh-6">
-                    Celsius to Kelvin: K = C + 273 or K = C + 271.15
-                </p>
             </div>
         </div>
     </section>

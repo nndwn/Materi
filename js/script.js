@@ -18,19 +18,26 @@ function showSlides(n) {
     let i;
     let slide = document.querySelectorAll("#slide");
     if (n > slide.length) {
-        slideIndex = 1
-    }
-    if (n < 1){
         slideIndex = slide.length
     }
-    for (i = 0; i < slide.length; i++){
-        slide[i].style.display = "none";
+    if (n < 1){
+        slideIndex = 1
     }
-    slide[slideIndex-1].style.display ="block";
+    if(1===1){
+        for (i = 0; i < slide.length; i++){
+            slide[i].style.display = "none";
+        }
+        slide[slideIndex-1].style.display ="block";
+    }
+ 
 };
 function plusSlides(n) {
     showSlides(slideIndex += n);
 };
+
+
+
+
 
 let animaNumber = 0;
 
@@ -41,7 +48,7 @@ function AnimaCount(){
         countA[i].style.display = "none";
     }
     animaNumber++;
-    if (animaNumber < countA.length) { animaNumber = 1 }
+    if (animaNumber > countA.length) { animaNumber = 1 }
     countA[animaNumber-1].style.display ="block";
     setTimeout(AnimaCount, 1000);
 
@@ -50,7 +57,6 @@ function AnimaCount(){
 
 
 function buttonS(){
-    console.log("test");
     let timesCount = document.getElementById("mySelect").value;
     let startbutton = document.getElementsByTagName("button")[0];
     const att = document.createAttribute("disabled");
@@ -76,6 +82,25 @@ function buttonS(){
 // };
 
 
+let soalSlide = 1;
+
+function slideSoal(s) {
+    let slideSoal = document.querySelectorAll("#soal");
+    if ( s > slideSoal){
+        soalSlide = 1;
+    }
+    if (s < 1){
+        soalSlide = slideSoal.length;
+    }
+    for(let i = 0; i < slideSoal.length; i++ ){
+        slideSoal[i].style.display = "none";
+    }
+    slideSoal[soalSlide-1].style.display = "block";
+};
+function plusslideSoal(n) {
+    slideSoal(soalSlide += n);
+};
+
 function selectCount() {
     let timesCount = document.getElementById("mySelect").value;
     let waktu = document.getElementById("countT");
@@ -85,8 +110,11 @@ function selectCount() {
                 waktu.innerHTML +=( "<span>"+ i +"</span>");
             }
             AnimaCount();
+            slideSoal(soalSlide);
+            plusslideSoal(0);
+            showSlides(1)
     } 
  
 
 }
-
+console.log(soalSlide);

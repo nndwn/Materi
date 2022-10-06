@@ -33,6 +33,7 @@ function plusSlides(n) {
 };
 
 let animaNumber = 0;
+
 function AnimaCount(){
     let i;
     let countA = document.querySelectorAll("#countT span");
@@ -42,7 +43,7 @@ function AnimaCount(){
     animaNumber++;
     if (animaNumber < countA.length) { animaNumber = 1 }
     countA[animaNumber-1].style.display ="block";
-    setTimeout(AnimaCount, 1000)
+    setTimeout(AnimaCount, 1000);
 
 
 }

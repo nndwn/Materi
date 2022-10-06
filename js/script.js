@@ -32,14 +32,29 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
 };
 
+let animaNumber = 0;
+function AnimaCount(){
+    let i;
+    let countA = document.querySelectorAll("#countT span");
+    for (i = 0; i < countA.length; i++) {
+        countA[i].style.display = "none";
+    }
+    animaNumber++;
+    if (animaNumber < countA.length) { animaNumber = 1 }
+    countA[animaNumber-1].style.display ="block";
+    setTimeout(AnimaCount, 1000)
+
+
+}
 
 
 function buttonS(){
-    let start = document.getElementById("n").value;
+    console.log("test");
+    let timesCount = document.getElementById("mySelect").value;
     let startbutton = document.getElementsByTagName("button")[0];
     const att = document.createAttribute("disabled");
-
-    if (start > 0 ){
+  
+    if (timesCount > 0 ){
         startbutton.removeAttribute("disabled");
     } else {
         startbutton.setAttributeNode(att);
@@ -47,14 +62,30 @@ function buttonS(){
 }
 
 
-function times () {
-    let i;
-    let start = document.getElementById("n").value;
+// function times () {
+//     let i;
+//     let start = document.getElementById("n").value;
+//     let waktu = document.getElementById("countT");
+//     waktu.style.display ="block";
+//     if (start > 0){
+//         for (i = 0; i < start; i++){
+//                 waktu.innerHTML +=( "<span>"+ i +"</span>");
+//             }
+//     } 
+// };
+
+
+function selectCount() {
+    let timesCount = document.getElementById("mySelect").value;
     let waktu = document.getElementById("countT");
-    waktu.style.display ="block";
-    if (start > 0){
-        for (i = 0; i < start; i++){
+
+    if (timesCount > 0){
+        for (i = 0; i < timesCount; i++){
                 waktu.innerHTML +=( "<span>"+ i +"</span>");
             }
+            AnimaCount();
     } 
-};
+ 
+
+}
+

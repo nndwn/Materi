@@ -44,7 +44,7 @@ section + section {
 section + section > a{
     width: 50%;
 }
-section > div.slide{
+section > div#slide{
     height: 100vh;
 }
 

@@ -82,24 +82,26 @@ function buttonS(){
 // };
 
 
-let soalSlide = 1;
+// let soalSlide = 1;
 
-function slideSoal(s) {
-    let slideSoal = document.querySelectorAll("#soal");
-    if ( s > slideSoal){
-        soalSlide = 1;
-    }
-    if (s < 1){
-        soalSlide = slideSoal.length;
-    }
-    for(let i = 0; i < slideSoal.length; i++ ){
-        slideSoal[i].style.display = "none";
-    }
-    slideSoal[soalSlide-1].style.display = "block";
-};
-function plusslideSoal(n) {
-    slideSoal(soalSlide += n);
-};
+// function slideSoal(s) {
+//     let slideSoal = document.querySelectorAll("#soal");
+//     if ( s > slideSoal){
+//         soalSlide = 1;
+//     }
+//     if (s < 1){
+//         soalSlide = slideSoal.length;
+//     }
+//     for(let i = 0; i < slideSoal.length; i++ ){
+//         slideSoal[i].style.display = "none";
+//     }
+//     slideSoal[soalSlide-1].style.display = "block";
+// };
+// function plusslideSoal(n) {
+//     slideSoal(soalSlide += n);
+// };
+
+
 
 function selectCount() {
     let timesCount = document.getElementById("mySelect").value;
@@ -110,11 +112,11 @@ function selectCount() {
                 waktu.innerHTML +=( "<span>"+ i +"</span>");
             }
             AnimaCount();
-            slideSoal(soalSlide);
-            plusslideSoal(0);
-            showSlides(1)
-    } 
+            plusSlides(1);
+  
+    }
+    // if(timesCount == timesCount.length){
+    //     plusSlides(1); 
+    // }
  
-
 }
-console.log(soalSlide);

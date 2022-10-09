@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 31</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <section>
+        <div id="countT"></div>
+            <div id="slide" class="dnone">
+                <div class="main">
+                    <h1>JavaScript if, else, and else if</h1>
+                    <p>adalah untuk memberikan suatu kondisi pada suatu pernyataan untuk membuat suatu keputusan. contoh: </p>
+                    <p><em>if</em> jika benar minum racun ini maka kamu akan mati , </p>
+                    <p><em>if else</em> jika hanya sedikit kamu tetap bisa hidup, </p>
+                    <p><em>else</em> jika tidak kamu tetap akan selalu hidup</p>
+            </div>
+        </div>
+        <div  id="slide" class="dnone">
+            <div class="main">
+                <h1>Conditional Statements</h1>
+                <p>Seperti penjelasan sebelumnya, didalam bahasa program terdapat 4 Conditional Statement yaitu</p>
+                <ul>
+                    <li><em>if</em> akan menjalankan perintah jika kondisi dengan keadaan benar</li>
+                    <li><em>else</em> jika perintah if dalam kondisi false maka perintah else akan menjadi alternatif perintah </li>
+                    <li><em>else if</em> adalah perintah alternatif jika kondisi if adalah false dan else if dalam kondisi benar jika tidak maka akan menjalankan perintah else</li>
+                    <li><em>switch</em> adalah perintah lain dari if jika memiliki banyak kondisi penyataan dalam keputusan</li>
+                </ul>
+            </div>
+        </div>
+        <div  id="slide" class="dnone">
+            <div class="main">
+                <h1>Cara Penulisan Conditional Statement</h1>
+                <pre>
+if (condition) {
+    //  eksekusi jika kondisi benar
+}
+                </pre>
+                <p>jika ada alternatif lain seperti else</p>
+                <pre>
+if (condition) {
+    //  eksekusi jika kondisi benar
+}else {
+    //  eksekusi jika kondisi salah
+}
+                </pre>
+                <p>Jika ada alternatif kondisi lain seperti else if</p>
+                <pre>
+if (condition) {
+    //  eksekusi jika kondisi benar
+}else if (condition){
+    //  eksekusi jika kondisi benar apa bila if dalam kondisi salah
+}else {
+    // eksekusi jika kondisi salah
+}
+                </pre>
+
+            </div>
+        </div>
+              
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1 >1. Buat File HTML</h1>
+                <pre>
+&lt;h1> ini adalah racun &lt;/h1>
+&lt;select>
+    &lt;option selected>Pilih&lt;/option
+    &lt;option value="1">Minum&lt;/option>
+    &lt;option value="2">Minum dikit saja&lt;/option>
+    &lt;option value="3">bego banget minum racun&lt;/option>
+&lt;/select>
+&lt; div id="hasil"> &lt/div>
+                </pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+              <h1 >2. Tambahkan JavaScript</h1>
+              <pre>
+                const select = document.getElementsByTagName("select")[0];
+                select.addEventListener('change',minum);
+                function minum(){
+                    const pilih =select.value;
+                    let show = document.getElementById("hasil");
+                    if (pilih == 1) {
+                        show.innerHTML="&lt;p>you die&lt;/p>";
+                    }else if (pilih == 2 ) {
+                        show.innerHTML="&lt;p>sekeratul maut&lt;/p>";
+                    }else {
+                        show.innerHTML="&lt;p>still a life&lt;/p>";
+                    }
+                }
+              </pre>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <div>
+                    <h1 >3. Hasilnya</h1>
+                    <p>Ini adalah racun</p>
+                    <select>
+                        <option selected value="0">Pilih</option>
+                        <option value="1">Minum</option>
+                        <option value="2">Minum Dikit aja</option>
+                        <option value="3">bego banget minum racun</option>
+                    </select>
+                    <div id="hasil">
+
+                    </div>
+                </div>
+                <script>
+                const select = document.getElementsByTagName("select")[0];
+                select.addEventListener('change',minum);
+                function minum(){
+                    const pilih =select.value;
+                    let show = document.getElementById("hasil");
+                    if (pilih == 1) {
+                        show.innerHTML="<p>you die</p>";
+                    }else if (pilih == 2 ) {
+                        show.innerHTML="<p>sekeratul maut</p>";
+                    }else {
+                        show.innerHTML="<p>still a life</p>";
+                    }
+                }
+                </script>
+            </div>
+        </div>
+    
+        <div id="soal" class="dnone">
+            <div class="main">
+                <h1>Latihan</h1>
+                <p class="num">Buat Script JS jika nilai di input dapat mengetahui nomor ganjil dan genap</p>
+            </div>
+        </div>
+        
+    </section>
+    <!-- <section>
+        <a onclick="plusSlides(-1)">
+
+        </a>
+        <a onclick="plusSlides(1)">
+
+        </a>
+    </section> -->
+
+</body>
+</html>

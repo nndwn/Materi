@@ -30,10 +30,10 @@ pre {
 .wd-50 {
     width: 50%;
 }
-p, ol, th , td  {
+p, ol, th , td ,ul {
     font-size: 1.7em;
 }
-section + section {
+/* section + section {
     display: flex;
     position: fixed;
     top: 0;
@@ -43,6 +43,9 @@ section + section {
 }
 section + section > a{
     width: 50%;
+} */
+section  {
+    counter-reset: num;
 }
 section > div#slide{
     height: 100vh;
@@ -91,4 +94,13 @@ figure img{
 
 .multiply{
     mix-blend-mode: multiply;
+}
+
+em {
+    font-weight: bold;
+}
+
+.num::before {
+    counter-increment: num;
+    content: counter(num)". ";
 }

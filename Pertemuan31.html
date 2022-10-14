@@ -106,7 +106,7 @@ if (condition) {
                 <div>
                     <h1 >3. Hasilnya</h1>
                     <p>Ini adalah racun</p>
-                    <select>
+                    <select onchange="">
                         <option selected value="0">Pilih</option>
                         <option value="1">Minum</option>
                         <option value="2">Minum Dikit aja</option>
@@ -116,9 +116,9 @@ if (condition) {
                         <p></p>
                     </div>
                 </div>
+
                 <script>
-                const select = document.getElementsByTagName("select")[0];
-                select.addEventListener('change',minum);
+          
                 function minum(){
                     const pilih =select.value;
                     let show = document.querySelector("#hasil p");
@@ -136,7 +136,7 @@ if (condition) {
             </div>
         </div>
     
-        <div id="soal" class="dnone">
+        <div id="slide" class="dnone">
             <div class="main">
                 <h1>Latihan</h1>
                 <p class="num">Buat Script JS jika nilai di input dapat mengetahui nomor ganjil dan genap</p>

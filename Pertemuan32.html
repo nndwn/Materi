@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 32</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <section>
+        <div id="countT"></div>
+            <div id="slide" class="dnone">
+                <div class="main">
+                    <h1>JavaScript Object</h1>
+                    <p>adalah sebuah type data object</p>
+                    <pre>
+                        const person = {
+                            firstName: "John",
+                            lastName: "Doe",
+                            age: 50,
+                            eyeColor: "blue"
+                          };
+                    </pre>
+            </div>
+        </div>
+        <div  id="slide" class="dnone">
+            <div class="main">
+                <h1>Cara Memanggil data type Object</h1>
+                <p>terdapat 2 cara untuk menampilkan sebuah data type object</p>
+                <ul>
+                    <li><em>objectName.propertyName</em></li>
+                    <li><em>objectName["propertyName"]</em></li>
+                </ul>
+            </div>
+        </div>
+        <div  id="slide" class="dnone">
+            <div class="main">
+                <h1>objectName.propertyNam</h1>
+               <pre>
+<em>// Buat Type data Object</em>
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+<em>// tampilkan sebuah type data object</em>
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName;
+               </pre>
+            </div>
+        </div>
+              
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1 >objectName["propertyName"]</h1>
+                <pre>
+<em>// Buat Type data Object</em>
+const person = {
+    firstName: "John",
+    lastName : "Doe",
+    id     :  5566
+    };
+                      
+<em>// tampilkan sebuah type data object</em>
+document.getElementById("demo").innerHTML =
+person["firstName"] + " " + person["lastName"];
+            </pre>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+              <h1 >Membuat Method Menggunakan Object</h1>
+              <p>kita dapat membuat method sendiri dengan menggunakan Object</p>
+              <p><em>objectName.methodName()</em></p>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <pre>
+<em>// Buat Type data object</em>
+const person = {
+    firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+    }
+};
+                                    
+<em>// Tampilkan method yang telah dibuat</em>
+    document.getElementById("demo").innerHTML = person.fullName();
+    </pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>What is <strong>this</strong>?</h1>
+                <p>javascript <b>this</b> adalah sebuah keyword , pada object type <b>this</b> dapat mendefinisikan bagian suatu object </p>
+                </div>
+                </div>   
+    
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Aturan Penting Dalam Sebuah Object</h1>
+                <p>jangan gunakan type data strings, Numbers, Booleans menjadi sebuah Object</p>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Latihan</h1>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+<p>1. Isi tanda titik dibawah ini</p>
+<pre>
+const person = {
+    firstName : "Jhon",
+    lastName : "Doe"
+};
+console.log(  ...  );
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+<p>2. Tambahkan indetitas negara john doe , negara indonesia</p> 
+<pre>
+    const person = {
+        firstName : "Jhon",
+        lastName : "Doe",
+        ....     : ...
+    };
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+<p>3. lengkapin titik berikut ini sehingga tampil "Jhon is 50"</p>
+<pre>
+    const person ... {
+        name ... "John", age ... 50
+    };
+    console.log ( ...  + " is " + ... );
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+    <p>4. gabungkan dan tampilkan object kata di bawah ini dengan membuat method</p>
+    <pre>
+        const susunKata = {
+            kataSatu : "saya",
+            kataDua : "Tampan", 
+            kataTiga : "sekali"
+            gabungKata : ...
+        }
+    </pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <p>5.</p>
+                </div>
+                </div>
+
+
+        
+    </section>
+    <!-- <section>
+        <a onclick="plusSlides(-1)">
+
+        </a>
+        <a onclick="plusSlides(1)">
+
+        </a>
+    </section> -->
+
+</body>
+</html>

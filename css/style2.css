@@ -72,10 +72,6 @@ td {
 td + td {
     border-left: 1px solid #000;
 }
-.flexAround{
-    display: flex;
-    justify-content: space-around;
-}
 
 svg {
     height: 45vh;

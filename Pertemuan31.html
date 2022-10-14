@@ -3,345 +3,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 30</title>
+    <title>Pertemuan 31</title>
     <link rel="stylesheet" href="css/style2.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <section>
         <div id="countT"></div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <h1>Operator Comparison </h1>
-                <p>Salah satu dari operator javascript untuk membuat suatu perbandingan nilai biasa digunakan untuk sebuah kondisi.</p>
-           
-            <table>
-                <thead>
-                    <tr>
-                        <th>Operator</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> == </td>
-                        <td>sama nilai meski type data berbeda</td>
-                    </tr>
-                    <tr>
-                        <td> === </td>
-                        <td>harus sama nilai dengan type data yang sama </td>
-                    </tr>
-                    <tr>
-                        <td>!=</td>
-                        <td>tidak sama nilai meski tipe data berbeda</td>
-                    </tr>
-                    <tr>
-                        <td>!==</td>
-                        <td>harus tidak sama nilai dengan type data yang sama</td>
-                    </tr>
-                    <tr>
-                        <td>></td>
-                        <td>harus lebih besar jika nilai sama maka false </td>
-                    </tr>
-                    <tr>
-                        <td> &lt; </td>
-                        <td>harus lebih kecil jika nilai sama maka false</td>
-                    </tr>
-                    <tr>
-                        <td> >= </td>
-                        <td>lebih besar sama dengan jika nilai sama maka true </td>
-                    </tr>
-                    <tr>
-                        <td> &lt;= </td>
-                        <td>lebih kecil sama dengan jika nilai sama maka true</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        </div>
-        <div  id="slide" class="dnone">
-            <div class="main">
-                <h1>Operator Logical</h1>
-                <p>adalah operator yang menilai perbandingan sebuah kebenaran dalam keputusan</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Operator</th>
-                            <th>Dekripsi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>&&</td>
-                            <td>logical AND</td>
-                        </tr>
-                        <tr>
-                            <td>||</td>
-                            <td>logical OR</td>
-                        </tr>
-                        <tr>
-                            <td>!</td>
-                            <td>logical not</td>
-                        </tr>
-                    </tbody>
-                </table>             
+            <div id="slide" class="dnone">
+                <div class="main">
+                    <h1>JavaScript if, else, and else if</h1>
+                    <p>adalah untuk memberikan suatu kondisi pada suatu pernyataan untuk membuat suatu keputusan. contoh: </p>
+                    <p><em>if</em> jika benar minum racun ini maka kamu akan mati , </p>
+                    <p><em>if else</em> jika hanya sedikit kamu tetap bisa hidup, </p>
+                    <p><em>else</em> jika tidak kamu tetap akan selalu hidup</p>
             </div>
         </div>
         <div  id="slide" class="dnone">
             <div class="main">
-                <h1>Logical AND</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Kondisi A</th>
-                            <th>Kondisi B</th>
-                            <th>Hasil</th>
-                            <th>Contoh</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>True</td>
-                            <td>True</td>
-                            <td>True</td>
-                        </tr>
-                        <tr>
-                            <td>true</td>
-                            <td>false</td>
-                            <td>false</td>
+                <h1>Conditional Statements</h1>
+                <p>Seperti penjelasan sebelumnya, didalam bahasa program terdapat 4 Conditional Statement yaitu</p>
+                <ul>
+                    <li><em>if</em> akan menjalankan perintah jika kondisi dengan keadaan benar</li>
+                    <li><em>else</em> jika perintah if dalam kondisi false maka perintah else akan menjadi alternatif perintah </li>
+                    <li><em>else if</em> adalah perintah alternatif jika kondisi if adalah false dan else if dalam kondisi benar jika tidak maka akan menjalankan perintah else</li>
+                    <li><em>switch</em> adalah perintah lain dari if jika memiliki banyak kondisi penyataan dalam keputusan</li>
+                </ul>
+            </div>
+        </div>
+        <div  id="slide" class="dnone">
+            <div class="main">
+                <h1>Cara Penulisan Conditional Statement</h1>
+                <pre>
+if (condition) {
+    //  eksekusi jika kondisi benar
+}
+                </pre>
+                <p>jika ada alternatif lain seperti else</p>
+                <pre>
+if (condition) {
+    //  eksekusi jika kondisi benar
+}else {
+    //  eksekusi jika kondisi salah
+}
+                </pre>
+                <p>Jika ada alternatif kondisi lain seperti else if</p>
+                <pre>
+if (condition) {
+    //  eksekusi jika kondisi benar
+}else if (condition){
+    //  eksekusi jika kondisi benar apa bila if dalam kondisi salah
+}else {
+    // eksekusi jika kondisi salah
+}
+                </pre>
 
-                        </tr>
-                        <tr>
-                            <td>false</td>
-                            <td>true</td>
-                            <td>false</td>
-                        </tr>
-                        <tr>
-                            <td>false</td>
-                            <td>false</td>
-                            <td>false</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
               
         <div id="slide" class="dnone">
             <div class="main">
-                <h1>Logical Or</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Kondisi A</th>
-                            <th>Kondisi B</th>
-                            <th>Hasil</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>true</td>
-                            <td>true</td>
-                            <td>true</td>
-                        </tr>
-                        <tr>
-                            <td>true</td>
-                            <td>false</td>
-                            <td>true</td>
-                        </tr>
-                        <tr>
-                            <td>false</td>
-                            <td>true</td>
-                            <td>true</td>
-                        </tr>
-                        <tr>
-                            <td>false</td>
-                            <td>false</td>
-                            <td>false</td>
-                        </tr>
-                    </tbody>
-                </table>   
+                <h1 >1. Buat File HTML</h1>
+                <pre>
+&lt;h1> ini adalah racun &lt;/h1>
+&lt;select>
+    &lt;option selected value= "0">Pilih&lt;/option
+    &lt;option value="1">Minum&lt;/option>
+    &lt;option value="2">Minum dikit saja&lt;/option>
+    &lt;option value="3">bego banget minum racun&lt;/option>
+&lt;/select>
+&lt; div id="hasil">
+    &lt;p> &lt;p>
+&lt/div>
+                </pre>
             </div>
         </div>
         <div id="slide" class="dnone">
             <div class="main">
-                <h1>Logical Not</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Kondisi</th>
-                            <th>Hasil</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>true</td>
-                            <td>false</td>
-                        </tr>
-                        <tr>
-                            <td>false</td>
-                            <td>true</td>
-                        </tr>
-                    </tbody>
-                </table>
+              <h1 >2. Tambahkan JavaScript</h1>
+              <pre>
+                const select = document.getElementsByTagName("select")[0];
+                select.addEventListener('change',minum);
+                function minum(){
+                    const pilih =select.value;
+                    let show = document.querySelector("#hasil p");
+                    if (pilih == 1) {
+                        show.textContent ="you die";
+                    }else if (pilih == 2 ) {
+                        show.textContent ="sekeratul maut";
+                    }else if (pilih == 3) {
+                        show.textContent ="still a life";
+                    } else{
+                        show.textContent = "";
+                    }
+                }
+              </pre>
             </div>
         </div>
 
         <div id="slide" class="dnone">
             <div class="main">
                 <div>
-                <h1>Latihan</h1>
-                <select name="" id="mySelect" onclick="buttonS()">
-                    <option value="0" selected>Select Times</option>
-                    <option value="60">1 Minute</option>
-                    <option value="120">2 Minute</option>
-                    <option value="180">3 Minute</option>
-                    <option value="240">4 Minute</option>
-                </select>
-                <button disabled onclick="selectCount(); this.onclick=null;">Mulai</button>
+                    <h1 >3. Hasilnya</h1>
+                    <p>Ini adalah racun</p>
+                    <select>
+                        <option selected value="0">Pilih</option>
+                        <option value="1">Minum</option>
+                        <option value="2">Minum Dikit aja</option>
+                        <option value="3">bego banget minum racun</option>
+                    </select>
+                    <div id="hasil">
+                        <p></p>
+                    </div>
                 </div>
+                <script>
+                const select = document.getElementsByTagName("select")[0];
+                select.addEventListener('change',minum);
+                function minum(){
+                    const pilih =select.value;
+                    let show = document.querySelector("#hasil p");
+                    if (pilih == 1) {
+                        show.textContent ="you die";
+                    }else if (pilih == 2 ) {
+                        show.textContent ="sekeratul maut";
+                    }else if (pilih == 3) {
+                        show.textContent ="still a life";
+                    } else{
+                        show.textContent = "";
+                    }
+                }
+                </script>
             </div>
         </div>
     
-        <div id="slide" class="dnone">
+        <div id="soal" class="dnone">
             <div class="main">
-                <p>1. ( 2 == "2")</p>
+                <h1>Latihan</h1>
+                <p class="num">Buat Script JS jika nilai di input dapat mengetahui nomor ganjil dan genap</p>
             </div>
         </div>
-        <div  id="slide" class="dnone">
-            <div class="main">
-                <p>2. ("test" == "test")</p>
-            </div>
-        </div>
-        <div  id="slide" class="dnone">
-            <div class="main">
-                <p>3. (100 >= 100)</p>
-            </div>
-        </div>
-        <div  id="slide" class="dnone">
-            <div class="main">
-                <p>4. (300 >= "100")</p>
-            </div>
-        </div>
-        <div  id="slide" class="dnone">
-            <div class="main">
-                <p>5. (10 &lt; 10)</p> 
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>6. !(30 > 1)</p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>7. (120 === "120") </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>8. (102 === 211) </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>9. (null == 0) </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">>
-            <div class="main">
-                <p>10. !(20 >= 20) </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>11. (2011 > 2011) || (2009 > 2001)</p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>12. !(28 &lt; 30 && 20 >= 20)</p>
-            </div>
-        </div>
-        <div id="slide" class="dnone"> 
-            <div class="main">
-                <p>13. (!(30 == 31) || 50 > 30)</p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>14. (20 &lt;= 40 && 50 == "50") || (34 >= 1)</p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>15. <pre>
-let varTest = 20; 
-varTest += 10;
-(varTest >= 2 && (varTest-1) &lt; 29)
-                </pre>
-            </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-            <p>16 . 
-            <pre>
-let x = 90;
-!(!(x > 10) || x == (x*1))
-            </pre>
-        </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>17. 
-                    <pre>
-let y = 20;
-let x = (y % 2 >= 1 );
-(x || y &lt; x + 30)
-                    </pre>
-                </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>18. 
-                    <pre>
-let z = 9 + d;
-let d;
-let y = 30*(10 % z)
-d += 1;
-( y == (d*10));
-                    </pre>
-                </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>19.
-                    <pre>
-let x = (10 == "10");
-let d = !(x && 11 > 11);
-(!(d) || x)
-                    </pre>
-                    
-                </p>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p> 20.
-                    <pre>
-let x = 13;
-let y = 12;
-let z = ( x >= 13 ) || !( x > y);
-(z && (25 == (x+y)));
-
-                    </pre>
-
-                </p>
-            </div>
-        </div>
+        
     </section>
     <!-- <section>
         <a onclick="plusSlides(-1)">

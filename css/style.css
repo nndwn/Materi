@@ -1,1 +1,18 @@
-*,*:before,*:after{box-sizing:border-box}html,body,div,span,object,iframe,figure,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,code,em,img,small,strike,strong,sub,sup,tt,b,u,i,ol,ul,li,fieldset,form,label,table,caption,tbody,tfoot,thead,tr,th,td,main,canvas,embed,footer,header,nav,section,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;text-size-adjust:none}footer,header,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}input{-webkit-appearance:none;border-radius:0}@font-face{font-family:oswald;src:url("../fonts/Oswald-SemiBold.ttf")}@font-face{font-family:karma;src:url("../fonts/Karma-Regular.ttf")}body{background-color:"#ffcc00"}/*# sourceMappingURL=style.css.map */
+/* Error: expected selector.
+ *   ,
+ * 6 | var ($mainColor)
+ *   |     ^
+ *   '
+ *   sass\_var.sass 6:5  @use
+ *   sass\main.sass 2:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected selector.\a   \2577 \a 6 \2502  var ($mainColor)\d\a   \2502      ^\a   \2575 \a   sass\\_var.sass 6:5  @use\a   sass\\main.sass 2:1  root stylesheet";
+}

@@ -12,130 +12,163 @@
         <div id="countT"></div>
             <div id="slide" class="dnone">
                 <div class="main">
-                    <h1>Operator Tenary</h1>
-                    <p>adalah operator yang membuat cara singkat conditional seperti if. </p>
-                    <p></p>
-    
+                    <h1>JavaScript Object</h1>
+                    <p>adalah sebuah type data object</p>
+                    <pre>
+                        const person = {
+                            firstName: "John",
+                            lastName: "Doe",
+                            age: 50,
+                            eyeColor: "blue"
+                          };
+                    </pre>
             </div>
         </div>
         <div  id="slide" class="dnone">
             <div class="main">
-                <h1>Conditional Statements</h1>
-                <p>Seperti penjelasan sebelumnya, didalam bahasa program terdapat 4 Conditional Statement yaitu</p>
-               
+                <h1>Cara Memanggil data type Object</h1>
+                <p>terdapat 2 cara untuk menampilkan sebuah data type object</p>
+                <ul>
+                    <li><em>objectName.propertyName</em></li>
+                    <li><em>objectName["propertyName"]</em></li>
+                </ul>
             </div>
         </div>
         <div  id="slide" class="dnone">
             <div class="main">
-                <h1>Cara Penulisan Conditional Statement</h1>
-                <pre>
-if (condition) {
-    //  eksekusi jika kondisi benar
-}
-                </pre>
-                <p>jika ada alternatif lain seperti else</p>
-                <pre>
-if (condition) {
-    //  eksekusi jika kondisi benar
-}else {
-    //  eksekusi jika kondisi salah
-}
-                </pre>
-                <p>Jika ada alternatif kondisi lain seperti else if</p>
-                <pre>
-if (condition) {
-    //  eksekusi jika kondisi benar
-}else if (condition){
-    //  eksekusi jika kondisi benar apa bila if dalam kondisi salah
-}else {
-    // eksekusi jika kondisi salah
-}
-                </pre>
+                <h1>objectName.propertyNam</h1>
+               <pre>
+<em>// Buat Type data Object</em>
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
 
+<em>// tampilkan sebuah type data object</em>
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName;
+               </pre>
             </div>
         </div>
               
         <div id="slide" class="dnone">
             <div class="main">
-                <h1 >1. Buat File HTML</h1>
+                <h1 >objectName["propertyName"]</h1>
                 <pre>
-&lt;h1> ini adalah racun &lt;/h1>
-&lt;select>
-    &lt;option selected value= "0">Pilih&lt;/option
-    &lt;option value="1">Minum&lt;/option>
-    &lt;option value="2">Minum dikit saja&lt;/option>
-    &lt;option value="3">bego banget minum racun&lt;/option>
-&lt;/select>
-&lt; div id="hasil">
-    &lt;p> &lt;p>
-&lt/div>
-                </pre>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-              <h1 >2. Tambahkan JavaScript</h1>
-              <pre>
-                const select = document.getElementsByTagName("select")[0];
-                select.addEventListener('change',minum);
-                function minum(){
-                    const pilih =select.value;
-                    let show = document.querySelector("#hasil p");
-                    if (pilih == 1) {
-                        show.textContent ="you die";
-                    }else if (pilih == 2 ) {
-                        show.textContent ="sekeratul maut";
-                    }else if (pilih == 3) {
-                        show.textContent ="still a life";
-                    } else{
-                        show.textContent = "";
-                    }
-                }
-              </pre>
+<em>// Buat Type data Object</em>
+const person = {
+    firstName: "John",
+    lastName : "Doe",
+    id     :  5566
+    };
+                      
+<em>// tampilkan sebuah type data object</em>
+document.getElementById("demo").innerHTML =
+person["firstName"] + " " + person["lastName"];
+            </pre>
             </div>
         </div>
 
         <div id="slide" class="dnone">
             <div class="main">
-                <div>
-                    <h1 >3. Hasilnya</h1>
-                    <p>Ini adalah racun</p>
-                    <select>
-                        <option selected value="0">Pilih</option>
-                        <option value="1">Minum</option>
-                        <option value="2">Minum Dikit aja</option>
-                        <option value="3">bego banget minum racun</option>
-                    </select>
-                    <div id="hasil">
-                        <p></p>
-                    </div>
-                </div>
-                <script>
-                const select = document.getElementsByTagName("select")[0];
-                select.addEventListener('change',minum);
-                function minum(){
-                    const pilih =select.value;
-                    let show = document.querySelector("#hasil p");
-                    if (pilih == 1) {
-                        show.textContent ="you die";
-                    }else if (pilih == 2 ) {
-                        show.textContent ="sekeratul maut";
-                    }else if (pilih == 3) {
-                        show.textContent ="still a life";
-                    } else{
-                        show.textContent = "";
-                    }
-                }
-                </script>
+              <h1 >Membuat Method Menggunakan Object</h1>
+              <p>kita dapat membuat method sendiri dengan menggunakan Object</p>
+              <p><em>objectName.methodName()</em></p>
             </div>
         </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <pre>
+<em>// Buat Type data object</em>
+const person = {
+    firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+    }
+};
+                                    
+<em>// Tampilkan method yang telah dibuat</em>
+    document.getElementById("demo").innerHTML = person.fullName();
+    </pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>What is <strong>this</strong>?</h1>
+                <p>javascript <b>this</b> adalah sebuah keyword , pada object type <b>this</b> dapat mendefinisikan bagian suatu object </p>
+                </div>
+                </div>   
     
-        <div id="soal" class="dnone">
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Aturan Penting Dalam Sebuah Object</h1>
+                <p>jangan gunakan type data strings, Numbers, Booleans menjadi sebuah Object</p>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
             <div class="main">
                 <h1>Latihan</h1>
-                <p class="num">Buat Script JS jika nilai di input dapat mengetahui nomor ganjil dan genap</p>
             </div>
         </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+<p>1. Isi tanda titik dibawah ini</p>
+<pre>
+const person = {
+    firstName : "Jhon",
+    lastName : "Doe"
+};
+console.log(  ...  );
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+<p>2. Tambahkan indetitas negara john doe , negara indonesia</p> 
+<pre>
+    const person = {
+        firstName : "Jhon",
+        lastName : "Doe",
+        ....     : ...
+    };
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+<p>3. lengkapin titik berikut ini sehingga tampil "Jhon is 50"</p>
+<pre>
+    const person ... {
+        name ... "John", age ... 50
+    };
+    console.log ( ...  + " is " + ... );
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+    <p>4. gabungkan dan tampilkan object kata di bawah ini dengan membuat method</p>
+    <pre>
+        const susunKata = {
+            kataSatu : "saya",
+            kataDua : "Tampan", 
+            kataTiga : "sekali"
+            gabungKata : ...
+        }
+    </pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <p>5.</p>
+                </div>
+                </div>
+
+
         
     </section>
     <!-- <section>

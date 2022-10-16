@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,152 +8,254 @@
     <link rel="stylesheet" href="css/style2.css">
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
     <section>
         <div id="countT"></div>
-            <div id="slide" class="dnone">
-                <div class="main">
-                    <h1>JavaScript String</h1>
-                    <p>Adalah tipe data text dengan diberikan tanda petik satu ( '' ) atau petik dua (""). </p>
-                    <pre>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>JavaScript String</h1>
+                <p>Adalah tipe data text dengan diberikan tanda petik satu ( '' ) atau petik dua (""). </p>
+                <pre>
 let carName1 = "Volvo XC60";  // Double quotes
 let carName2 = 'Volvo XC60';  // Single quotes
                     </pre>
             </div>
         </div>
-        <div  id="slide" class="dnone">
+        <div id="slide" class="dnone">
             <div class="main">
-                <p>Bagaimana Jika Sebuah String Memiliki tanda baca titik satu atau titik dua</p>
+                <p>String juga bisa menggambungkan titik dua dan titik satu seperti berikut ini.</p>
                 <pre>
 let answer1 = "It's alright";
 let answer2 = "He is called 'Johnny'";
 let answer3 = 'He is called "Johnny"';
                 </pre>
+                <p>Note : String tidak dapat mengabungkan tanda baca titik dua yang sama contoh seperti berikut ini</p>
+                <pre>
+let text = "We are the so-called "Vikings" from the north.";
+</pre>
             </div>
         </div>
         <div id="slide" class="dnone">
             <div class="main">
+
+                <p>
+                    untuk mengatasi nya perlu tambahan Backslash di awalnya. seperti berikut ini
+                </p>
                 <pre>
-let text = "We are the so-called "Vikings" from the north.";
-                </pre>
-            <p>
-                pada contoh di atas adalah sebuah kesalahan dalam penulisan string untuk mengatasinya gunakan backslash
-            </p>
+let text = "We are the so-called \"Vikings\" from the north.";
+</pre>
+                <p>berikut adalah table tanda baca backslash yang dapat digunakan</p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Code</th>
-                        <th>Result</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> \' </td>
-                        <td> ' </td>
-                        <td>Single Quote</td>
-                    </tr>
-                    <tr>
-                        <td>\"</td>
-                        <td> " </td>
-                        <td> Double Quote</td>
-                    </tr>
-                    <tr>
-                        <td>\\</td>
-                        <td>\</td>
-                        <td>Backslash</td>
-                    </tr>
-                </tbody>
-            </table>
-               
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Result</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> \' </td>
+                            <td> ' </td>
+                            <td>Single Quote</td>
+                        </tr>
+                        <tr>
+                            <td>\"</td>
+                            <td> " </td>
+                            <td> Double Quote</td>
+                        </tr>
+                        <tr>
+                            <td>\\</td>
+                            <td>\</td>
+                            <td>Backslash</td>
+                        </tr>
+                    </tbody>
+                </table>
+
 
             </div>
         </div>
-        <div  id="slide" class="dnone">
+        <div id="slide" class="dnone">
             <div class="main">
-                <p>Data String dapat di ubah menjadi Nilai Number</p>
-                <p>Dengan menjumlah semua huruf termasuk spasi</p>
-                <p>Contoh : </p>
-               <pre>
+                <p>Selain itu tipe Data String dapat menjumlah seluruh isi text dan dijadikan sebuah tipe data number
+                    dengan menggunakan property</p>
+
+                <pre>
 let text = "saya tampan sekali";
-let jumlahText = text.length;
+console.log(text.length); // menampilkan 18 huruf dan spasi
                </pre>
+                <p>note: tanda spasi di string di hitung juga nya</p>
             </div>
         </div>
-              
+
         <div id="slide" class="dnone">
             <div class="main">
                 <h1>String Method dan Property</h1>
-                <p>adalah teknik memanipulasi type data string</p>
+                <p>banyak method dan property di javascript untuk memanipulasi data pada variable string.</p>
             </div>
         </div>
 
         <div id="slide" class="dnone">
             <div class="main">
-              <h1 >Mengambil sebagian Teks Variable String</h1>
-              <ul>
-                <li>slice(start, end)</li>
-                <li>substring(start, end)</li>
-                <li>substr(start, length)</li>
-              </ul>
+                <h1>variable string dapat di ambil setiap katanya dengan menggunakan method di bawah ini</h1>
+                <ul>
+                    <li>slice(start, end)</li>
+                    <li>substring(start, end)</li>
+                    <li>substr(start, length)</li>
+                </ul>
             </div>
         </div>
 
         <div id="slide" class="dnone">
             <div class="main">
                 <h1>JavaScript String slice()</h1>
+                <p>berikut ini adalah cara kerja method slice()</p>
                 <div class="flex">
-                <div><pre>
+                    <div>
+                        <pre>
 let str = "Apple, Banana, Kiwi";
-let part = str.slice(7, 13);
-console.log(part);
+console.log(str.slice(7, 13));
 <em>//hasil Banana</em>
 </pre>
-</div>
-<div>
-    <pre>
+                    </div>
+                    <div>
+                        <pre>
 let str = "Apple, Banana, Kiwi";
-let part = str.slice(-12, -6);
-console.log(part);
+console.log(str.slice(-12, -6));
 <em>//hasil Banana dengan mengambil dari kiri ke kanan</em>
     </pre>
-</div>
-</div>
-<div class="flex">
-    <div>
-        <pre>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <pre>
 let str = "Apple, Banana, Kiwi";
-let part = str.slice(7);
-console.log(part);
+console.log(str.slice(7));
 <em>//Hasil Banana, Kiwi</em>            
         </pre>
-    </div>
-    <div>
-        <pre>
+                    </div>
+                    <div>
+                        <pre>
 let str = "Apple, Banana, Kiwi";
-let part = str.slice(-12);
-console.log (part);
+console.log (str.slice(-12));
 <em>//Hasil Banana, Kiwi</em> 
         </pre>
-    </div>
-</div>
-</div>
+                    </div>
+                </div>
+            </div>
+            <p>Note : pada method slice() dapat mengambil teks string positif dari kanan , jika nilai nya minus maka
+                mengambil teks nya dari kiri</p>
+
+        </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>JavaScript String substring()</h1>
+                <p>sama seperti method slice() fungsi nya bedanya subtring tidak dapat mengambil dengan nilai minus,
+                    berikut ini adalah cara nya</p>
+                <pre>
+    let contohSubtring = "Apple, Banana, Kiwi";
+    console.log(contohSubtring.substring(7, 13));
+</pre>
+                <p>note : method substring() tidak dapat menampikan nilai di bawah 0 </p>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>JavaScript String substr()</h1>
+                <p>sama fungsinya dengan method sebelumnya tapi perbedaannya di parameter akhirnya adalah jumlah text
+                    yang mau di tampilkan </p>
+                <pre>
+let contohSubstr = "Apple, Banana, Kiwi";
+console.log(substr(7,6));
+</pre>
+                <pre>
+let contohSubstr = "Apple, Banana, Kiwi";
+console.log(substr(7)); 
+</pre>
+                <p>Note : Method substr() jika di buat dengan nilai negatif maka teks string yang akan tampil dari kiri.
+                </p>
 
             </div>
         </div>
         <div id="slide" class="dnone">
             <div class="main">
-                <h1>JavaScript String substring()</h1>
-                <p>perbedaaan dari method slice()</p>
-                d
-                </div>
-                </div>   
-    
+                <h1>Mengganti isi Content String</h1>
+                <p>string dapat diganti teks di dalam variablenya dengan menggunakan method replace() . seperti berikut
+                    ini</p>
+                <pre>
+    let contohReplace = "Apple, Apple, Banana, Kiwi";
+    console.log(contohReplace.replace("Apple", "Watermelon"));
+</pre>
+                <p>Note : pada method replace hanya bisa menganti teks yang di awal saja selain itu method ini sifat nya
+                    sensi case memperhatikan besar kecil huruf </p>
+            </div>
+        </div>
         <div id="slide" class="dnone">
             <div class="main">
-                <h1>Aturan Penting Dalam Sebuah Object</h1>
-                <p>jangan gunakan type data strings, Numbers, Booleans menjadi sebuah Object</p>
+                <h1>Menganti format teks string</h1>
+                <p>di javascript terdapat 2 method untuk mengubah format text</p>
+                <ul>
+                    <li>toUpperCase() // membuat huruf besar semua</li>
+                    <li>toLowerCase() // membuat huruf kecil semua</li>
+                </ul>
+                <pre>
+    let namaHewan1 = "kelinci";
+    let namaHewan2 = "HARIMAU";
+    console.log(namaHewan1.toUpperCase());
+    console.log(namaHewan2.toLowerCase());
+</pre>
+                <p>note: perlu diingat semua method mengubah text di jelaskan sebelumnya tidak mengubah string yang
+                    original </p>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Mangabung dua atau tiga string yang berbeda</h1>
+                <p>dengan menggunakan method concat() dapat mengabungkan dua atau tiga variable yang berbeda menjadi
+                    satu, berikut contohnya</p>
+                <pre>
+    let text1 = "Hello";
+    let text2 = "World";
+    let text3 = text1.concat(" ", text2); 
+    console.log(text3); <em>//akan tampilan Hello World</em>
+</pre>
+                <p>pada contoh tersebut sama hal nya dengan</p>
+                <pre>
+    let text3 = text1 + " " + text2;
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Menhitung setiap kalimat atau kata pada string</h1>
+                <p>dengan menggunakan kan method split() dapat memisahkan setiap kata pada sebuah kalimat pada string</p>
+                <pre>
+    let contohKoma = "buaya,kucing,harimau";
+    console.log(contohKoma.split(",").length);
+    let contohSpace = "susah sekali belajar javascript";
+    console.log(contohSpace.split(" ").length);
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Mengambil salah satu huruf pada string</h1>
+                <p>pada javascrip terdapat dua cara mengambil salah satu huruf pada string, menggunakan method dan
+                    property, seperti berikut ini.</p>
+                <pre>
+        let contohChar ="Hello World";
+        console.log(contohChar.charAt(0)); //menampilkan huruf dimulai dari nol yaitu H , jika di ubah jadi 2 maka akan tampil huruf  
+    </pre>
+                <p>cara kedua menggunakan access property</p>
+                <pre>
+        let contoChar2 ="Hello World";
+        console.log(contoChar2[0]);
+    </pre>
+                <p>note : meskipun menggunakan bracket seperti array tapi itu bukan array</p>
             </div>
         </div>
         <div id="slide" class="dnone">
@@ -162,60 +265,54 @@ console.log (part);
         </div>
         <div id="slide" class="dnone">
             <div class="main">
-<p>1. Isi tanda titik dibawah ini</p>
-<pre>
-const person = {
-    firstName : "Jhon",
-    lastName : "Doe"
-};
-console.log(  ...  );
-</pre>
+                <h1>1. bagaimana menulisa di string dengan tulisan di bawah ini ? <em>boleh coba di console untuk memastikan</em></h1>
+                <p> pengembala shaun the sheep berkata : " oumm heem \  'ow ow' hem hem "</p>
+                <p>buat text di atas menjadi sebuah variable string</p>
+        </div>
+        <script>
+            let text10 = "pengembala shaund the sheep berkata: \"oumm hemm \\ \'ow ow \' hem hem \"";
+        </script>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>2. berapa jumlah tiap huruf, spasi dan juga jumlah tiap kalimat pada soal ini ? buat perintah nya</h1>
+                <script>
+                    let text11 = "berapa jumlah tiap huruf, spasi dan juga jumlah tiap kalimat pada soal ini ? buat perintah nya";
+                    console.log(text11.length + " jawaban nomor 2");
+                    console.loh(text11.split(" ").length);
+                </script>
             </div>
         </div>
         <div id="slide" class="dnone">
             <div class="main">
-<p>2. Tambahkan indetitas negara john doe , negara indonesia</p> 
-<pre>
-    const person = {
-        firstName : "Jhon",
-        lastName : "Doe",
-        ....     : ...
-    };
-</pre>
+                <h1>3. buat sebuah anagram di variable di bawah ini menjadi sebuah tulisan "javascript" </h1>
+                <p>capt jr visa</p>
+                <script>
+                    let anagram = "capt jr visa";
+                    console.log(anagram[5] + anagram[1] + anagram[8] +  anagram[1] + anagram[10] + anagram[0] +  anagram[6] +  anagram[9] + anagram[2] + anagram[3] );
+                </script>
             </div>
         </div>
         <div id="slide" class="dnone">
             <div class="main">
-<p>3. lengkapin titik berikut ini sehingga tampil "Jhon is 50"</p>
-<pre>
-    const person ... {
-        name ... "John", age ... 50
-    };
-    console.log ( ...  + " is " + ... );
-</pre>
+                <h1>4. pada variable string di bawah ini ambil salah satu kalimat menjadi "javascript itu susah banget" </h1>
+                <pre>
+                    let textSatu = "JavaScript adalah bahasa pemograman";
+                    let textDua = "susah banget hidup ane";
+                    let textTiga = "lihat itu ada burung";
+                </pre>
             </div>
+            <script>
+                let textSatu = "JavaScript adalah bahasa pemograman";
+                let textDua = "susah banget hidup ane";
+                let textTiga = "lihat itu ada burung";
+                console.log(textSatu.substr(0,10) + " " + textTiga.substr(6,3) + " " + textDua.substr(0,12));
+            </script>
         </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-    <p>4. gabungkan dan tampilkan object kata di bawah ini dengan membuat method</p>
-    <pre>
-        const susunKata = {
-            kataSatu : "saya",
-            kataDua : "Tampan",
-            kataTiga : "sekali"
-            gabungKata : ...
-        }
-    </pre>
-            </div>
-        </div>
-        <div id="slide" class="dnone">
-            <div class="main">
-                <p>5.</p>
-                </div>
-                </div>
 
 
-        
+
+
     </section>
     <!-- <section>
         <a onclick="plusSlides(-1)">
@@ -227,4 +324,5 @@ console.log(  ...  );
     </section> -->
 
 </body>
+
 </html>

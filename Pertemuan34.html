@@ -1,0 +1,242 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 34</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <div id="countT"></div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Array</h1>
+                <p>Adalah spesial variable yang dapat menampung banyak nilai.</p>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Mengapa gunakan Array </h1>
+                <p>
+                    Jika seandainya banyak sebuah variable yang perlu di tampung sebuah nilai, contoh berikut ini.
+                </p>
+<pre>
+    let car1 = 'toyota';
+    let car2 = 'honda';
+    let car3 = 'bmw';
+</pre>
+<p>dengan array kamu tidak perlu membuat banyak sebuah variable dengan cara satu persatu.</p>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Cara Penulisan Array</h1>
+<pre>
+    const array_name = [item1, item2, item3 ];
+</pre>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+<h1>Contoh Array</h1>
+<p>Berikut ini adalah cara penerapannyan</p>
+<pre>
+    const cars = ["toyota", "honda", "BMW"];
+</pre>
+<pre>
+    const cars = [
+        "toyota",
+        "honda",
+        "BMW"
+    ]
+</pre>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Memanggil Array</h1>
+                <p>
+                    berikut adalah cara memanggil salah satu array
+                </p>
+<pre>
+    const cars = ["toyota", "honda", "BMW"];
+    console.log (cars[0]);
+</pre>
+<p>dan berikut ini adalah cara bagaimana menampilkan seluruh nilai array</p>
+<pre>
+    const cars = ["toyota", "honda", "BMW"];
+    console.log (cars);
+</pre>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Mengganti Nilai Array</h1>
+                <p> berikut ini adalah cara bagaimana mengganti sebuah nilai yang telah dibuat.</p>
+<pre>
+    const cars = ["toyota", "honda", "BMW"];
+    cars[0] = "suzuki";
+    console.log(cars);
+</pre>
+
+        </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Array adalah type data Object</h1>
+                <p>Array adalah spesial type object, di javascript array di denefinisikan salah satu type data object, kita dapat memeriksa sendiri dengan perintah berikut ini.</p>
+<pre>
+    const cars = ["toyota", "honda", "BMW"];
+    console.log(typeof(cars));
+</pre>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Array Element Bisa di letekkan apa saja</h1>
+                <p>Array dapat diletkan apapun seperti function , array di dalam array, dan type data lainnya.</p>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Perbedaan Array dan Objects</h1>
+                <p>Objects</p>
+<pre>
+    const cars = {car1 : "toyota", car2: "honda",car3:"BMW" };
+    console.log(cars.car1);
+</pre>
+<p>Array</p>
+<pre>
+    const cars = ["toyota", "honda", "BMW"]
+    console.log(cars[0]);
+</pre>
+
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Perbedaan Array dan Objects</h1>
+                <p>dari kode sebelumnya dapat disimpulkan memiliki sebuah perbedaan yaitu</p>
+                <ul>
+                    <li>Array menggunakan Penomoran untuk menampilkan indexnya</li>
+                    <li>
+                        Object menggunakan Penamaan untuk menampilkan indexnya 
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Kapan Gunakan Array dan Objects</h1>
+                <ul>
+                    <li>
+                        jika data banyak element teks (string) gunakan object
+                    </li>
+                    <li>
+                        Jika data banyak element Nomor(Number) gunakan array
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>1. Array Methods</h1>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>1.1 Convert Array Menjadi String</h1>
+                <p>Menampilkan isi di dalam index array harus menjadi array</p>
+                <ul>
+                    <li>toString()</li>
+                    <li>join()</li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>1.2 Menghapus menambahkan array</h1>
+                <p>Array dapat menambahkan dan menghampus element di dalam index array</p>
+                <ul>
+                    <li>pop();//menghapus element terakhir pada index array</li>
+                    <li>push();//menambahkan element terakhir pada index array</li>
+                    <li>shift(); //menghapus element awal pada index array</li>
+                    <li>unshift(); //menambahkan element awal pada index array</li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>1.3 Mengabungkan dua Array berbeda</h1>
+                <ul>
+                    <li>concat();</li>
+                </ul>
+
+<pre>
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+</pre>
+            </div>
+        </div>
+
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>1.4 Menyisipkan dan menghapus array </h1>
+                <ul>
+                    <li>splice()</li>
+                </ul>
+                <p>fungsi splice() dapat menambahkan dan menghapus array</p> 
+            </div>
+        </div>
+        
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>1.5 Memotong array</h1>
+                <ul>
+                    <li>slice()</li>
+                </ul>
+                <p>fungsi slice dapat memotong array </p>
+            </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>1.6 Mengurut Array </h1>
+                <ul>
+                    <li>sort(); mengurutkan berdasarkan (Ascending)</li>
+                    <li>reverse(); mengurutkan bersarkan (Descending)</li>
+                </ul>
+        </div>
+        </div>
+        <div id="slide" class="dnone">
+            <div class="main">
+                <h1>Latihan </h1>
+        </div>
+        </div>
+        
+
+
+
+
+    </section>
+    <!-- <section>
+        <a onclick="plusSlides(-1)">
+
+        </a>
+        <a onclick="plusSlides(1)">
+
+        </a>
+    </section> -->
+
+</body>
+
+</html>
